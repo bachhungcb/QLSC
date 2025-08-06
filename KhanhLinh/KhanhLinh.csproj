@@ -36,10 +36,28 @@
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
     </Reference>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.4.0\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -56,6 +74,8 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,13 +85,141 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCarScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCarScreen.Designer.cs">
+      <DependentUpon>AddCarScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCarTypeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCarTypeScreen.Designer.cs">
+      <DependentUpon>AddCarTypeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConsumptionNormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConsumptionNormScreen.Designer.cs">
+      <DependentUpon>AddConsumptionNormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployeeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeeScreen.Designer.cs">
+      <DependentUpon>AddEmployeeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemScreen.Designer.cs">
+      <DependentUpon>AddItemScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddItemWarehouse.Designer.cs">
+      <DependentUpon>AddItemWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPhieuNhapKho.Designer.cs">
+      <DependentUpon>AddPhieuNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhieuXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPhieuXuatKho.Designer.cs">
+      <DependentUpon>AddPhieuXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRepairJobScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRepairJobScreen.Designer.cs">
+      <DependentUpon>AddRepairJobScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRouteScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRouteScreen.Designer.cs">
+      <DependentUpon>AddRouteScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRouteTrackingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRouteTrackingScreen.Designer.cs">
+      <DependentUpon>AddRouteTrackingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarAndDeviceScreen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CarAndDeviceScreen.Designer.cs">
       <DependentUpon>CarAndDeviceScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarTypeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarTypeScreen.Designer.cs">
+      <DependentUpon>CarTypeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumptionNormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumptionNormScreen.Designer.cs">
+      <DependentUpon>ConsumptionNormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataObject\AddCarDetailItems.cs" />
+    <Compile Include="DataObject\InventoryVoucherDetail.cs" />
+    <Compile Include="DataObject\SessionInfo.cs" />
+    <Compile Include="DataObject\SharedId.cs" />
+    <Compile Include="DepartmentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentScreen.Designer.cs">
+      <DependentUpon>DepartmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailRepairNormTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailRepairNormTable.Designer.cs">
+      <DependentUpon>DetailRepairNormTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeScreen.Designer.cs">
+      <DependentUpon>EmployeeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryVoucherScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryVoucherScreen.Designer.cs">
+      <DependentUpon>InventoryVoucherScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemScreen.Designer.cs">
+      <DependentUpon>ItemScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhanhLinhDataSet.cs">
+      <DependentUpon>KhanhLinhDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="KhanhLinhDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -95,6 +243,102 @@
     <Compile Include="MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuStripUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuStripUC.Designer.cs">
+      <DependentUpon>MenuStripUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuNhapKho.Designer.cs">
+      <DependentUpon>PhieuNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuXuatKho.Designer.cs">
+      <DependentUpon>PhieuXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairJobScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairJobScreen.Designer.cs">
+      <DependentUpon>RepairJobScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairNormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairNormScreen.Designer.cs">
+      <DependentUpon>RepairNormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteScreen.Designer.cs">
+      <DependentUpon>RouteScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteTrackingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteTrackingScreen.Designer.cs">
+      <DependentUpon>RouteTrackingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusBarUC.Designer.cs">
+      <DependentUpon>StatusBarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCarScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCarScreen.Designer.cs">
+      <DependentUpon>UpdateCarScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCarTypeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCarTypeScreen.Designer.cs">
+      <DependentUpon>UpdateCarTypeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateConsumptionNormScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateConsumptionNormScreen.Designer.cs">
+      <DependentUpon>UpdateConsumptionNormScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployeeScreen.Designer.cs">
+      <DependentUpon>UpdateEmployeeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateItemWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateItemWarehouse.Designer.cs">
+      <DependentUpon>UpdateItemWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePhieuXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePhieuXuatKho.Designer.cs">
+      <DependentUpon>UpdatePhieuXuatKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRepairJobScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRepairJobScreen.Designer.cs">
+      <DependentUpon>UpdateRepairJobScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagement.Designer.cs">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -103,14 +347,116 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCarScreen.resx">
+      <DependentUpon>AddCarScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCarTypeScreen.resx">
+      <DependentUpon>AddCarTypeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConsumptionNormScreen.resx">
+      <DependentUpon>AddConsumptionNormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeeScreen.resx">
+      <DependentUpon>AddEmployeeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemScreen.resx">
+      <DependentUpon>AddItemScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddItemWarehouse.resx">
+      <DependentUpon>AddItemWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPhieuNhapKho.resx">
+      <DependentUpon>AddPhieuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPhieuXuatKho.resx">
+      <DependentUpon>AddPhieuXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRepairJobScreen.resx">
+      <DependentUpon>AddRepairJobScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRouteScreen.resx">
+      <DependentUpon>AddRouteScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRouteTrackingScreen.resx">
+      <DependentUpon>AddRouteTrackingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CarAndDeviceScreen.resx">
       <DependentUpon>CarAndDeviceScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarTypeScreen.resx">
+      <DependentUpon>CarTypeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumptionNormScreen.resx">
+      <DependentUpon>ConsumptionNormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentScreen.resx">
+      <DependentUpon>DepartmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailRepairNormTable.resx">
+      <DependentUpon>DetailRepairNormTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeScreen.resx">
+      <DependentUpon>EmployeeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryVoucherScreen.resx">
+      <DependentUpon>InventoryVoucherScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemScreen.resx">
+      <DependentUpon>ItemScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStripUC.resx">
+      <DependentUpon>MenuStripUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuNhapKho.resx">
+      <DependentUpon>PhieuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuXuatKho.resx">
+      <DependentUpon>PhieuXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairJobScreen.resx">
+      <DependentUpon>RepairJobScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepairNormScreen.resx">
+      <DependentUpon>RepairNormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouteScreen.resx">
+      <DependentUpon>RouteScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouteTrackingScreen.resx">
+      <DependentUpon>RouteTrackingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusBarUC.resx">
+      <DependentUpon>StatusBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCarScreen.resx">
+      <DependentUpon>UpdateCarScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCarTypeScreen.resx">
+      <DependentUpon>UpdateCarTypeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateConsumptionNormScreen.resx">
+      <DependentUpon>UpdateConsumptionNormScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmployeeScreen.resx">
+      <DependentUpon>UpdateEmployeeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateItemWarehouse.resx">
+      <DependentUpon>UpdateItemWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePhieuXuatKho.resx">
+      <DependentUpon>UpdatePhieuXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRepairJobScreen.resx">
+      <DependentUpon>UpdateRepairJobScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManagement.resx">
+      <DependentUpon>WarehouseManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +471,28 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FinalDataSet.xsc">
+      <DependentUpon>FinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDataSet.xss">
+      <DependentUpon>FinalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDataSet1.xsc">
+      <DependentUpon>FinalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FinalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FinalDataSet1.xss">
+      <DependentUpon>FinalDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="KhanhLinhDataSet.xsc">
       <DependentUpon>KhanhLinhDataSet.xsd</DependentUpon>
     </None>
@@ -163,11 +531,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Assets\add %281%29.png" />
+    <Content Include="Assets\background.jpg" />
     <Content Include="Assets\icon.ico" />
     <Content Include="Assets\fileIcon.png" />
     <Content Include="Assets\icons8-folder-30.png" />
     <Content Include="Assets\icons8-grid-48.png" />
+    <None Include="Assets\icons8-list-50.png" />
     <Content Include="Assets\icons8-logout-50.png" />
+    <None Include="Assets\icons8-update-50.png" />
     <Content Include="Assets\logo.png" />
     <Content Include="Assets\logout-svgrepo-com.png" />
     <Content Include="Assets\mainScreen_background.jpg" />

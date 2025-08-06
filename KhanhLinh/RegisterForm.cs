@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; using KhanhLinh.DataObject;
 using System.Data.SqlClient;
 
 namespace KhanhLinh
@@ -112,7 +112,7 @@ namespace KhanhLinh
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Lỗi: " + ex,
+                        MessageBox.Show("Lỗi: " + ex.Message,
                                "Lỗi",
                                MessageBoxButtons.OK,
                                MessageBoxIcon.Error);

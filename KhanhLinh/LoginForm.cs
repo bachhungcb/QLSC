@@ -6,9 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; using KhanhLinh.DataObject;
 using System.Windows.Forms.VisualStyles;
 using System.Data.SqlClient;
+using KhanhLinh.DataObject;
 
 namespace KhanhLinh
 {
@@ -75,7 +76,7 @@ namespace KhanhLinh
 
         }
 
-        private void login_btn_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string username = login_username.Text.Trim();
             string password = login_pwd.Text.Trim();
@@ -101,6 +102,9 @@ namespace KhanhLinh
                     bool isPwdCorrect = BCrypt.Net.BCrypt.Verify(password, passwordFromDB);
                     if (isPwdCorrect)
                     {
+
+                        SessionInfo.Username = username;
+
                         MainScreen mainScreen = new MainScreen();
                         mainScreen.Show();
                         this.Hide();
@@ -116,7 +120,7 @@ namespace KhanhLinh
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex,
+                    MessageBox.Show("Lỗi: " + ex.Message,
                                "Lỗi",
                                MessageBoxButtons.OK,
                                MessageBoxIcon.Error);
@@ -128,7 +132,5 @@ namespace KhanhLinh
 
             }
         }
-
-
     }
 }
