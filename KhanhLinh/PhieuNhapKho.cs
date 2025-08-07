@@ -100,5 +100,28 @@ namespace KhanhLinh
             this.Hide();
             phieuXuatKho.Show();
         }
+
+        private void phieuNhapKhoOverview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var phieuNhapKhoId = "";
+            if (e.RowIndex >= 0)
+            {
+                phieuNhapKhoId = phieuNhapKhoOverview.Rows[e.RowIndex].Cells["idDataGridViewTextBoxColumn"].Value?.ToString();
+            }
+            SharedId.Id = phieuNhapKhoId;
+        }
+
+        private void cậpNhậtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SharedId.Id == null)
+            {
+                MessageBox.Show("Dòng chọn không hợp lệ");
+            }
+            else
+            {
+                UpdatePhieuNhapKho updatePhieuNhapKho = new UpdatePhieuNhapKho();
+                updatePhieuNhapKho.Show();
+            }
+        }
     }
 }

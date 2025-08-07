@@ -65,3 +65,4 @@ F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.csproj.Up2Date
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.exe
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.pdb
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.exe.config
+F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.UpdatePhieuXuatKho.resources

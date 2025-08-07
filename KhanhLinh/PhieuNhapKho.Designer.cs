@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.roleStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,14 +55,6 @@
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.phieuNhapKhoOverview = new MetroFramework.Controls.MetroGrid();
-            this.vInventoryVoucherBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.phieuNhapKhoDetail = new MetroFramework.Controls.MetroGrid();
-            this.vVoucherDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vInventoryVoucherTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vInventoryVoucherTableAdapter();
-            this.vVoucherDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vVoucherDetailTableAdapter();
-            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.docNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,6 +63,10 @@
             this.createdAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createdByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.vInventoryVoucherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.phieuNhapKhoDetail = new MetroFramework.Controls.MetroGrid();
             this.carIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commandIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,6 +85,11 @@
             this.warehouseCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.warehouseName5DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isItemWithSerialDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.vVoucherDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vInventoryVoucherTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vInventoryVoucherTableAdapter();
+            this.vVoucherDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vVoucherDetailTableAdapter();
+            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
+            this.cậpNhậtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.phieuNhapKhoOverview)).BeginInit();
@@ -112,7 +113,8 @@
             this.danhMụcToolStripMenuItem,
             this.địnhMứcToolStripMenuItem,
             this.phiếuToolStripMenuItem,
-            this.thêmToolStripMenuItem});
+            this.thêmToolStripMenuItem,
+            this.cậpNhậtToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(9, 9);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1015, 41);
@@ -268,14 +270,14 @@
             this.phieuNhapKhoOverview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.phieuNhapKhoOverview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.phieuNhapKhoOverview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieuNhapKhoOverview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieuNhapKhoOverview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.phieuNhapKhoOverview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.phieuNhapKhoOverview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.docNoDataGridViewTextBoxColumn,
@@ -287,14 +289,14 @@
             this.createdByDataGridViewTextBoxColumn,
             this.isActiveDataGridViewCheckBoxColumn});
             this.phieuNhapKhoOverview.DataSource = this.vInventoryVoucherBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.phieuNhapKhoOverview.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.phieuNhapKhoOverview.DefaultCellStyle = dataGridViewCellStyle14;
             this.phieuNhapKhoOverview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.phieuNhapKhoOverview.EnableHeadersVisualStyles = false;
             this.phieuNhapKhoOverview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -303,136 +305,22 @@
             this.phieuNhapKhoOverview.Name = "phieuNhapKhoOverview";
             this.phieuNhapKhoOverview.ReadOnly = true;
             this.phieuNhapKhoOverview.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieuNhapKhoOverview.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieuNhapKhoOverview.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.phieuNhapKhoOverview.RowHeadersWidth = 51;
             this.phieuNhapKhoOverview.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.phieuNhapKhoOverview.RowTemplate.Height = 24;
             this.phieuNhapKhoOverview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.phieuNhapKhoOverview.Size = new System.Drawing.Size(1015, 277);
             this.phieuNhapKhoOverview.TabIndex = 0;
+            this.phieuNhapKhoOverview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.phieuNhapKhoOverview_CellContentClick);
             this.phieuNhapKhoOverview.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.phieuNhapKhoOverview_CellDoubleClick);
-            // 
-            // vInventoryVoucherBindingSource
-            // 
-            this.vInventoryVoucherBindingSource.DataMember = "vInventoryVoucher";
-            this.vInventoryVoucherBindingSource.DataSource = this.finalDataSet1;
-            // 
-            // finalDataSet1
-            // 
-            this.finalDataSet1.DataSetName = "FinalDataSet1";
-            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.panel1.Controls.Add(this.phieuNhapKhoDetail);
-            this.panel1.Location = new System.Drawing.Point(12, 336);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1015, 269);
-            this.panel1.TabIndex = 11;
-            // 
-            // phieuNhapKhoDetail
-            // 
-            this.phieuNhapKhoDetail.AllowUserToAddRows = false;
-            this.phieuNhapKhoDetail.AllowUserToDeleteRows = false;
-            this.phieuNhapKhoDetail.AllowUserToOrderColumns = true;
-            this.phieuNhapKhoDetail.AllowUserToResizeRows = false;
-            this.phieuNhapKhoDetail.AutoGenerateColumns = false;
-            this.phieuNhapKhoDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.phieuNhapKhoDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.phieuNhapKhoDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.phieuNhapKhoDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieuNhapKhoDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.phieuNhapKhoDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.phieuNhapKhoDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.carIdDataGridViewTextBoxColumn,
-            this.commandIdDataGridViewTextBoxColumn,
-            this.idDataGridViewTextBoxColumn1,
-            this.itemIdDataGridViewTextBoxColumn,
-            this.itemSerialNoDataGridViewTextBoxColumn,
-            this.parentIdDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.returnSerialDataGridViewTextBoxColumn,
-            this.warehouseIdDataGridViewTextBoxColumn,
-            this.carCodeDataGridViewTextBoxColumn,
-            this.carNameDataGridViewTextBoxColumn,
-            this.lisencePlateDataGridViewTextBoxColumn,
-            this.itemCodeDataGridViewTextBoxColumn,
-            this.itemNameDataGridViewTextBoxColumn,
-            this.unitDataGridViewTextBoxColumn,
-            this.warehouseCodeDataGridViewTextBoxColumn,
-            this.warehouseName5DataGridViewTextBoxColumn,
-            this.isItemWithSerialDataGridViewCheckBoxColumn});
-            this.phieuNhapKhoDetail.DataSource = this.vVoucherDetailBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.phieuNhapKhoDetail.DefaultCellStyle = dataGridViewCellStyle5;
-            this.phieuNhapKhoDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.phieuNhapKhoDetail.EnableHeadersVisualStyles = false;
-            this.phieuNhapKhoDetail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.phieuNhapKhoDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.phieuNhapKhoDetail.Location = new System.Drawing.Point(0, 0);
-            this.phieuNhapKhoDetail.Name = "phieuNhapKhoDetail";
-            this.phieuNhapKhoDetail.ReadOnly = true;
-            this.phieuNhapKhoDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.phieuNhapKhoDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.phieuNhapKhoDetail.RowHeadersWidth = 51;
-            this.phieuNhapKhoDetail.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.phieuNhapKhoDetail.RowTemplate.Height = 24;
-            this.phieuNhapKhoDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.phieuNhapKhoDetail.Size = new System.Drawing.Size(1015, 269);
-            this.phieuNhapKhoDetail.TabIndex = 0;
-            // 
-            // vVoucherDetailBindingSource
-            // 
-            this.vVoucherDetailBindingSource.DataMember = "vVoucherDetail";
-            this.vVoucherDetailBindingSource.DataSource = this.finalDataSet1;
-            // 
-            // vInventoryVoucherTableAdapter
-            // 
-            this.vInventoryVoucherTableAdapter.ClearBeforeFill = true;
-            // 
-            // vVoucherDetailTableAdapter
-            // 
-            this.vVoucherDetailTableAdapter.ClearBeforeFill = true;
-            // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 619);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1033, 41);
-            this.statusBarUC1.TabIndex = 12;
             // 
             // docNoDataGridViewTextBoxColumn
             // 
@@ -508,6 +396,99 @@
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
             this.isActiveDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // vInventoryVoucherBindingSource
+            // 
+            this.vInventoryVoucherBindingSource.DataMember = "vInventoryVoucher";
+            this.vInventoryVoucherBindingSource.DataSource = this.finalDataSet1;
+            // 
+            // finalDataSet1
+            // 
+            this.finalDataSet1.DataSetName = "FinalDataSet1";
+            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel1.Controls.Add(this.phieuNhapKhoDetail);
+            this.panel1.Location = new System.Drawing.Point(12, 336);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1015, 269);
+            this.panel1.TabIndex = 11;
+            // 
+            // phieuNhapKhoDetail
+            // 
+            this.phieuNhapKhoDetail.AllowUserToAddRows = false;
+            this.phieuNhapKhoDetail.AllowUserToDeleteRows = false;
+            this.phieuNhapKhoDetail.AllowUserToOrderColumns = true;
+            this.phieuNhapKhoDetail.AllowUserToResizeRows = false;
+            this.phieuNhapKhoDetail.AutoGenerateColumns = false;
+            this.phieuNhapKhoDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.phieuNhapKhoDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phieuNhapKhoDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.phieuNhapKhoDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieuNhapKhoDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.phieuNhapKhoDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.phieuNhapKhoDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.carIdDataGridViewTextBoxColumn,
+            this.commandIdDataGridViewTextBoxColumn,
+            this.idDataGridViewTextBoxColumn1,
+            this.itemIdDataGridViewTextBoxColumn,
+            this.itemSerialNoDataGridViewTextBoxColumn,
+            this.parentIdDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.returnSerialDataGridViewTextBoxColumn,
+            this.warehouseIdDataGridViewTextBoxColumn,
+            this.carCodeDataGridViewTextBoxColumn,
+            this.carNameDataGridViewTextBoxColumn,
+            this.lisencePlateDataGridViewTextBoxColumn,
+            this.itemCodeDataGridViewTextBoxColumn,
+            this.itemNameDataGridViewTextBoxColumn,
+            this.unitDataGridViewTextBoxColumn,
+            this.warehouseCodeDataGridViewTextBoxColumn,
+            this.warehouseName5DataGridViewTextBoxColumn,
+            this.isItemWithSerialDataGridViewCheckBoxColumn});
+            this.phieuNhapKhoDetail.DataSource = this.vVoucherDetailBindingSource;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.phieuNhapKhoDetail.DefaultCellStyle = dataGridViewCellStyle17;
+            this.phieuNhapKhoDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.phieuNhapKhoDetail.EnableHeadersVisualStyles = false;
+            this.phieuNhapKhoDetail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.phieuNhapKhoDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.phieuNhapKhoDetail.Location = new System.Drawing.Point(0, 0);
+            this.phieuNhapKhoDetail.Name = "phieuNhapKhoDetail";
+            this.phieuNhapKhoDetail.ReadOnly = true;
+            this.phieuNhapKhoDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.phieuNhapKhoDetail.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.phieuNhapKhoDetail.RowHeadersWidth = 51;
+            this.phieuNhapKhoDetail.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.phieuNhapKhoDetail.RowTemplate.Height = 24;
+            this.phieuNhapKhoDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.phieuNhapKhoDetail.Size = new System.Drawing.Size(1015, 269);
+            this.phieuNhapKhoDetail.TabIndex = 0;
             // 
             // carIdDataGridViewTextBoxColumn
             // 
@@ -677,6 +658,36 @@
             this.isItemWithSerialDataGridViewCheckBoxColumn.ReadOnly = true;
             this.isItemWithSerialDataGridViewCheckBoxColumn.Width = 125;
             // 
+            // vVoucherDetailBindingSource
+            // 
+            this.vVoucherDetailBindingSource.DataMember = "vVoucherDetail";
+            this.vVoucherDetailBindingSource.DataSource = this.finalDataSet1;
+            // 
+            // vInventoryVoucherTableAdapter
+            // 
+            this.vInventoryVoucherTableAdapter.ClearBeforeFill = true;
+            // 
+            // vVoucherDetailTableAdapter
+            // 
+            this.vVoucherDetailTableAdapter.ClearBeforeFill = true;
+            // 
+            // statusBarUC1
+            // 
+            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 619);
+            this.statusBarUC1.Name = "statusBarUC1";
+            this.statusBarUC1.Size = new System.Drawing.Size(1033, 41);
+            this.statusBarUC1.TabIndex = 12;
+            // 
+            // cậpNhậtToolStripMenuItem
+            // 
+            this.cậpNhậtToolStripMenuItem.Image = global::KhanhLinh.Properties.Resources.icons8_update_50;
+            this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
+            this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(102, 37);
+            this.cậpNhậtToolStripMenuItem.Text = "Cập nhật";
+            this.cậpNhậtToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem_Click);
+            // 
             // PhieuNhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -760,5 +771,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn warehouseCodeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn warehouseName5DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isItemWithSerialDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
     }
 }

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.roleStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.danhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,11 +50,14 @@
             this.phiếuNhậpKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phiếuXuấtKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.PNKCreatedAt = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.PNKCreatedBy = new System.Windows.Forms.ComboBox();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
             this.DocStatus = new System.Windows.Forms.Label();
             this.PNKDocStatus = new System.Windows.Forms.TextBox();
             this.PNKDescription = new System.Windows.Forms.TextBox();
@@ -63,17 +67,34 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.ItemCode = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Warehouse = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.warehouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khanhLinhDataSet1 = new KhanhLinh.KhanhLinhDataSet1();
             this.CarCode = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addBtn = new System.Windows.Forms.Button();
+            this.departmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusBarUC1 = new KhanhLinh.StatusBarUC();
+            this.employeeTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.EmployeeTableAdapter();
+            this.itemTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.ItemTableAdapter();
+            this.departmentTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.DepartmentTableAdapter();
+            this.carTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTableAdapter();
+            this.warehouseTableAdapter = new KhanhLinh.KhanhLinhDataSet1TableAdapters.WarehouseTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -86,7 +107,8 @@
             this.danhMụcToolStripMenuItem,
             this.địnhMứcToolStripMenuItem,
             this.phiếuToolStripMenuItem,
-            this.thêmToolStripMenuItem});
+            this.thêmToolStripMenuItem,
+            this.danhSáchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1029, 41);
@@ -230,6 +252,14 @@
             this.thêmToolStripMenuItem.Text = "Thêm";
             this.thêmToolStripMenuItem.Click += new System.EventHandler(this.thêmToolStripMenuItem_Click);
             // 
+            // danhSáchToolStripMenuItem
+            // 
+            this.danhSáchToolStripMenuItem.Image = global::KhanhLinh.Properties.Resources.icons8_list_50;
+            this.danhSáchToolStripMenuItem.Name = "danhSáchToolStripMenuItem";
+            this.danhSáchToolStripMenuItem.Size = new System.Drawing.Size(111, 37);
+            this.danhSáchToolStripMenuItem.Text = "Danh sách";
+            this.danhSáchToolStripMenuItem.Click += new System.EventHandler(this.danhSáchToolStripMenuItem_Click);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -289,6 +319,7 @@
             // 
             this.PNKCreatedBy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.PNKCreatedBy.DataSource = this.employeeBindingSource;
             this.PNKCreatedBy.DisplayMember = "Name";
             this.PNKCreatedBy.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PNKCreatedBy.FormattingEnabled = true;
@@ -297,6 +328,16 @@
             this.PNKCreatedBy.Size = new System.Drawing.Size(267, 39);
             this.PNKCreatedBy.TabIndex = 35;
             this.PNKCreatedBy.ValueMember = "Id";
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.finalDataSet1;
+            // 
+            // finalDataSet1
+            // 
+            this.finalDataSet1.DataSetName = "FinalDataSet1";
+            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DocStatus
             // 
@@ -383,14 +424,14 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemCode,
@@ -399,42 +440,51 @@
             this.Quantity,
             this.Warehouse,
             this.CarCode});
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(26, 35);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.metroGrid1.RowHeadersWidth = 51;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 24;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(957, 275);
             this.metroGrid1.TabIndex = 33;
+            this.metroGrid1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellValueChanged);
             // 
             // ItemCode
             // 
+            this.ItemCode.DataSource = this.itemBindingSource;
+            this.ItemCode.DisplayMember = "Code";
             this.ItemCode.HeaderText = "Mã vật tư";
             this.ItemCode.MinimumWidth = 6;
             this.ItemCode.Name = "ItemCode";
             this.ItemCode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ItemCode.ValueMember = "Id";
             this.ItemCode.Width = 125;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "Item";
+            this.itemBindingSource.DataSource = this.finalDataSet1;
             // 
             // ItemName
             // 
@@ -459,21 +509,42 @@
             // 
             // Warehouse
             // 
+            this.Warehouse.DataSource = this.warehouseBindingSource;
+            this.Warehouse.DisplayMember = "Code";
             this.Warehouse.HeaderText = "Kho";
             this.Warehouse.MinimumWidth = 6;
             this.Warehouse.Name = "Warehouse";
             this.Warehouse.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Warehouse.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Warehouse.ValueMember = "Id";
             this.Warehouse.Width = 125;
+            // 
+            // warehouseBindingSource
+            // 
+            this.warehouseBindingSource.DataMember = "Warehouse";
+            this.warehouseBindingSource.DataSource = this.khanhLinhDataSet1;
+            // 
+            // khanhLinhDataSet1
+            // 
+            this.khanhLinhDataSet1.DataSetName = "KhanhLinhDataSet1";
+            this.khanhLinhDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // CarCode
             // 
+            this.CarCode.DataSource = this.carBindingSource;
+            this.CarCode.DisplayMember = "Code";
             this.CarCode.HeaderText = "Xe";
             this.CarCode.MinimumWidth = 6;
             this.CarCode.Name = "CarCode";
             this.CarCode.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.CarCode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.CarCode.ValueMember = "Id";
             this.CarCode.Width = 125;
+            // 
+            // carBindingSource
+            // 
+            this.carBindingSource.DataMember = "Car";
+            this.carBindingSource.DataSource = this.finalDataSet1;
             // 
             // addBtn
             // 
@@ -485,8 +556,14 @@
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(134, 43);
             this.addBtn.TabIndex = 32;
-            this.addBtn.Text = "Thêm";
+            this.addBtn.Text = "Lưu";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
+            // departmentBindingSource
+            // 
+            this.departmentBindingSource.DataMember = "Department";
+            this.departmentBindingSource.DataSource = this.finalDataSet1;
             // 
             // statusBarUC1
             // 
@@ -496,6 +573,26 @@
             this.statusBarUC1.Name = "statusBarUC1";
             this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
             this.statusBarUC1.TabIndex = 16;
+            // 
+            // employeeTableAdapter
+            // 
+            this.employeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // departmentTableAdapter
+            // 
+            this.departmentTableAdapter.ClearBeforeFill = true;
+            // 
+            // carTableAdapter
+            // 
+            this.carTableAdapter.ClearBeforeFill = true;
+            // 
+            // warehouseTableAdapter
+            // 
+            this.warehouseTableAdapter.ClearBeforeFill = true;
             // 
             // UpdatePhieuXuatKho
             // 
@@ -507,13 +604,22 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
             this.Name = "UpdatePhieuXuatKho";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePhieuXuatKho";
+            this.Load += new System.EventHandler(this.UpdatePhieuXuatKho_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -551,13 +657,26 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroGrid metroGrid1;
+        private System.Windows.Forms.Button addBtn;
+        private StatusBarUC statusBarUC1;
+        private FinalDataSet1 finalDataSet1;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
+        private FinalDataSet1TableAdapters.EmployeeTableAdapter employeeTableAdapter;
+        private System.Windows.Forms.ToolStripMenuItem danhSáchToolStripMenuItem;
+        private System.Windows.Forms.BindingSource itemBindingSource;
+        private FinalDataSet1TableAdapters.ItemTableAdapter itemTableAdapter;
+        private System.Windows.Forms.BindingSource departmentBindingSource;
+        private FinalDataSet1TableAdapters.DepartmentTableAdapter departmentTableAdapter;
+        private System.Windows.Forms.BindingSource carBindingSource;
+        private FinalDataSet1TableAdapters.CarTableAdapter carTableAdapter;
+        private KhanhLinhDataSet1 khanhLinhDataSet1;
+        private System.Windows.Forms.BindingSource warehouseBindingSource;
+        private KhanhLinhDataSet1TableAdapters.WarehouseTableAdapter warehouseTableAdapter;
         private System.Windows.Forms.DataGridViewComboBoxColumn ItemCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewComboBoxColumn Warehouse;
         private System.Windows.Forms.DataGridViewComboBoxColumn CarCode;
-        private System.Windows.Forms.Button addBtn;
-        private StatusBarUC statusBarUC1;
     }
 }

@@ -321,6 +321,12 @@
     <Compile Include="UpdateItemWarehouse.Designer.cs">
       <DependentUpon>UpdateItemWarehouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdatePhieuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePhieuNhapKho.Designer.cs">
+      <DependentUpon>UpdatePhieuNhapKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdatePhieuXuatKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -448,6 +454,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateItemWarehouse.resx">
       <DependentUpon>UpdateItemWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePhieuNhapKho.resx">
+      <DependentUpon>UpdatePhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdatePhieuXuatKho.resx">
       <DependentUpon>UpdatePhieuXuatKho.cs</DependentUpon>

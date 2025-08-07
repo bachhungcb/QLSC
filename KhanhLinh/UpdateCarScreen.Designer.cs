@@ -308,7 +308,7 @@
             this.carTypeBox.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carTypeBox.FormattingEnabled = true;
             this.carTypeBox.Location = new System.Drawing.Point(544, 300);
-            this.carTypeBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carTypeBox.Margin = new System.Windows.Forms.Padding(4);
             this.carTypeBox.Name = "carTypeBox";
             this.carTypeBox.Size = new System.Drawing.Size(247, 33);
             this.carTypeBox.TabIndex = 31;
@@ -801,7 +801,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UpdateCarScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateCarScreen";

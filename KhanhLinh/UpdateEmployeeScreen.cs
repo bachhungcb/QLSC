@@ -222,6 +222,9 @@ namespace KhanhLinh
             empScreen.Show();
         }
 
+        private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
