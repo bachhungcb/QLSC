@@ -234,7 +234,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.jobType);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.addBtn);
@@ -257,20 +257,20 @@
             // 
             // jobType
             // 
-            this.jobType.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobType.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.jobType.FormattingEnabled = true;
-            this.jobType.Location = new System.Drawing.Point(485, 389);
+            this.jobType.Location = new System.Drawing.Point(565, 267);
             this.jobType.Name = "jobType";
-            this.jobType.Size = new System.Drawing.Size(506, 39);
+            this.jobType.Size = new System.Drawing.Size(405, 33);
             this.jobType.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(489, 356);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label7.Location = new System.Drawing.Point(400, 271);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 31);
+            this.label7.Size = new System.Drawing.Size(132, 25);
             this.label7.TabIndex = 34;
             this.label7.Text = "Loại công việc";
             // 
@@ -291,102 +291,106 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.intendTime.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.intendTime.CustomFormat = "dd/MM/yyyy";
-            this.intendTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intendTime.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.intendTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.intendTime.Location = new System.Drawing.Point(485, 294);
+            this.intendTime.Location = new System.Drawing.Point(219, 267);
             this.intendTime.Name = "intendTime";
-            this.intendTime.Size = new System.Drawing.Size(506, 38);
+            this.intendTime.Size = new System.Drawing.Size(137, 32);
             this.intendTime.TabIndex = 23;
             // 
             // skillLevel
             // 
-            this.skillLevel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skillLevel.Location = new System.Drawing.Point(21, 390);
+            this.skillLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.skillLevel.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.skillLevel.Location = new System.Drawing.Point(735, 209);
             this.skillLevel.Name = "skillLevel";
-            this.skillLevel.Size = new System.Drawing.Size(458, 38);
+            this.skillLevel.Size = new System.Drawing.Size(235, 32);
             this.skillLevel.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 356);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label6.Location = new System.Drawing.Point(627, 213);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 31);
+            this.label6.Size = new System.Drawing.Size(75, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Bậc thợ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(479, 260);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label5.Location = new System.Drawing.Point(15, 271);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 31);
+            this.label5.Size = new System.Drawing.Size(158, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Thời gian dự kiến";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 245);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label4.Location = new System.Drawing.Point(15, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 31);
+            this.label4.Size = new System.Drawing.Size(71, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Loại xe";
             // 
             // repairJobDescription
             // 
-            this.repairJobDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.repairJobDescription.Location = new System.Drawing.Point(21, 182);
+            this.repairJobDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.repairJobDescription.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.repairJobDescription.Location = new System.Drawing.Point(95, 149);
             this.repairJobDescription.Name = "repairJobDescription";
-            this.repairJobDescription.Size = new System.Drawing.Size(970, 38);
+            this.repairJobDescription.Size = new System.Drawing.Size(873, 32);
             this.repairJobDescription.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 137);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.Location = new System.Drawing.Point(15, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 31);
+            this.label3.Size = new System.Drawing.Size(61, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Mô tả";
             // 
             // repairJobName
             // 
-            this.repairJobName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.repairJobName.Location = new System.Drawing.Point(495, 73);
+            this.repairJobName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.repairJobName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.repairJobName.Location = new System.Drawing.Point(95, 89);
             this.repairJobName.Name = "repairJobName";
-            this.repairJobName.Size = new System.Drawing.Size(496, 38);
+            this.repairJobName.Size = new System.Drawing.Size(873, 32);
             this.repairJobName.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(489, 31);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(15, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 31);
+            this.label2.Size = new System.Drawing.Size(41, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên";
             // 
             // repairJobCode
             // 
-            this.repairJobCode.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.repairJobCode.Location = new System.Drawing.Point(21, 73);
+            this.repairJobCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.repairJobCode.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.repairJobCode.Location = new System.Drawing.Point(95, 29);
             this.repairJobCode.Name = "repairJobCode";
-            this.repairJobCode.Size = new System.Drawing.Size(458, 38);
+            this.repairJobCode.Size = new System.Drawing.Size(873, 32);
             this.repairJobCode.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.label1.Location = new System.Drawing.Point(15, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 31);
+            this.label1.Size = new System.Drawing.Size(39, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã";
             // 
@@ -394,11 +398,11 @@
             // 
             this.repairJobCarTypeId.DataSource = this.carTypeBindingSource;
             this.repairJobCarTypeId.DisplayMember = "Name";
-            this.repairJobCarTypeId.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.repairJobCarTypeId.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.repairJobCarTypeId.FormattingEnabled = true;
-            this.repairJobCarTypeId.Location = new System.Drawing.Point(21, 293);
+            this.repairJobCarTypeId.Location = new System.Drawing.Point(95, 209);
             this.repairJobCarTypeId.Name = "repairJobCarTypeId";
-            this.repairJobCarTypeId.Size = new System.Drawing.Size(458, 39);
+            this.repairJobCarTypeId.Size = new System.Drawing.Size(504, 33);
             this.repairJobCarTypeId.TabIndex = 0;
             this.repairJobCarTypeId.ValueMember = "Id";
             // 

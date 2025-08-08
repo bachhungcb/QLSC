@@ -44,7 +44,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.addBtn);
             this.panel2.Controls.Add(this.carTypeDescription);
             this.panel2.Controls.Add(this.label7);
@@ -70,35 +70,38 @@
             // 
             // carTypeDescription
             // 
+            this.carTypeDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.carTypeDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carTypeDescription.Location = new System.Drawing.Point(32, 251);
+            this.carTypeDescription.Location = new System.Drawing.Point(149, 141);
+            this.carTypeDescription.Multiline = true;
             this.carTypeDescription.Name = "carTypeDescription";
-            this.carTypeDescription.Size = new System.Drawing.Size(952, 38);
+            this.carTypeDescription.Size = new System.Drawing.Size(835, 85);
             this.carTypeDescription.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 206);
+            this.label7.Location = new System.Drawing.Point(37, 145);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 31);
+            this.label7.Size = new System.Drawing.Size(74, 31);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Miêu tả";
+            this.label7.Text = "Mô tả";
             // 
             // carTypeName
             // 
+            this.carTypeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.carTypeName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carTypeName.Location = new System.Drawing.Point(32, 148);
+            this.carTypeName.Location = new System.Drawing.Point(149, 87);
             this.carTypeName.Name = "carTypeName";
-            this.carTypeName.Size = new System.Drawing.Size(952, 38);
+            this.carTypeName.Size = new System.Drawing.Size(835, 38);
             this.carTypeName.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 114);
+            this.label2.Location = new System.Drawing.Point(37, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 31);
             this.label2.TabIndex = 18;
@@ -106,17 +109,18 @@
             // 
             // carTypeCode
             // 
+            this.carTypeCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.carTypeCode.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carTypeCode.Location = new System.Drawing.Point(32, 62);
+            this.carTypeCode.Location = new System.Drawing.Point(149, 33);
             this.carTypeCode.Name = "carTypeCode";
-            this.carTypeCode.Size = new System.Drawing.Size(952, 38);
+            this.carTypeCode.Size = new System.Drawing.Size(835, 38);
             this.carTypeCode.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 18);
+            this.label1.Location = new System.Drawing.Point(37, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 31);
             this.label1.TabIndex = 16;

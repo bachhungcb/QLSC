@@ -221,7 +221,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.addBtn);
             this.panel2.Controls.Add(this.routeDescription);
             this.panel2.Controls.Add(this.label4);
@@ -249,73 +249,78 @@
             // 
             // routeDescription
             // 
-            this.routeDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeDescription.Location = new System.Drawing.Point(22, 335);
+            this.routeDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeDescription.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeDescription.Location = new System.Drawing.Point(110, 144);
+            this.routeDescription.Multiline = true;
             this.routeDescription.Name = "routeDescription";
-            this.routeDescription.Size = new System.Drawing.Size(945, 38);
+            this.routeDescription.Size = new System.Drawing.Size(869, 68);
             this.routeDescription.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 292);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label4.Location = new System.Drawing.Point(29, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 31);
+            this.label4.Size = new System.Drawing.Size(61, 25);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Miêu tả";
+            this.label4.Text = "Mô tả";
             // 
             // routeLength
             // 
-            this.routeLength.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeLength.Location = new System.Drawing.Point(22, 232);
+            this.routeLength.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeLength.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeLength.Location = new System.Drawing.Point(755, 40);
             this.routeLength.Name = "routeLength";
-            this.routeLength.Size = new System.Drawing.Size(945, 38);
+            this.routeLength.Size = new System.Drawing.Size(224, 32);
             this.routeLength.TabIndex = 22;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 187);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.Location = new System.Drawing.Point(617, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 31);
+            this.label3.Size = new System.Drawing.Size(109, 25);
             this.label3.TabIndex = 21;
             this.label3.Text = "Độ dài (km)";
             // 
             // routeName
             // 
-            this.routeName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeName.Location = new System.Drawing.Point(22, 137);
+            this.routeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeName.Location = new System.Drawing.Point(110, 91);
             this.routeName.Name = "routeName";
-            this.routeName.Size = new System.Drawing.Size(945, 38);
+            this.routeName.Size = new System.Drawing.Size(869, 32);
             this.routeName.TabIndex = 20;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 103);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(29, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 31);
+            this.label2.Size = new System.Drawing.Size(41, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Tên";
             // 
             // routeCode
             // 
-            this.routeCode.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeCode.Location = new System.Drawing.Point(22, 52);
+            this.routeCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeCode.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeCode.Location = new System.Drawing.Point(110, 40);
             this.routeCode.Name = "routeCode";
-            this.routeCode.Size = new System.Drawing.Size(945, 38);
+            this.routeCode.Size = new System.Drawing.Size(483, 32);
             this.routeCode.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 18);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(29, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 31);
+            this.label1.Size = new System.Drawing.Size(39, 25);
             this.label1.TabIndex = 17;
             this.label1.Text = "Mã";
             // 

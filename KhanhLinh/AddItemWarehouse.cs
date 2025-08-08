@@ -177,5 +177,10 @@ private void cậpNhậtToolStripMenuItem_Click(object sender, EventArgs e)
 
             updateItemWarehouse.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

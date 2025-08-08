@@ -16,6 +16,7 @@ namespace KhanhLinh
         public MainScreen()
         {
             InitializeComponent();
+            this.BackColor = ColorTranslator.FromHtml("#E6F9FF");
         }
        
        
@@ -121,6 +122,16 @@ namespace KhanhLinh
             PhieuXuatKho phieuXuatKho = new PhieuXuatKho();
             this.Hide();
             phieuXuatKho.Show();
+        }
+
+        private void statusBarUC1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStripUC2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

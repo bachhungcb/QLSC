@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\KhanhLinh\\",
+  "WorkspaceRootPath": "F:\\Solution\\Solution\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|f:\\khanhlinh\\khanhlinh\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\phieunhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +34,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|f:\\solution\\solution\\khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 6613a17dd17f82f4edf74fb8d2593f55b15200fd
     }
   ],
   "DocumentGroupContainers": [
@@ -49,15 +54,22 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+<<<<<<< HEAD
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+>>>>>>> 6613a17dd17f82f4edf74fb8d2593f55b15200fd
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PhieuNhapKho.cs",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\PhieuNhapKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\PhieuNhapKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\PhieuNhapKho.cs",
-              "RelativeToolTip": "KhanhLinh\\PhieuNhapKho.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAADgv3QAAAANAAAAAAAAAA==",
+              "Title": "UpdateCarScreen.cs [Design]",
+              "DocumentMoniker": "F:\\Solution\\Solution\\KhanhLinh\\UpdateCarScreen.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\UpdateCarScreen.cs",
+              "ToolTip": "F:\\Solution\\Solution\\KhanhLinh\\UpdateCarScreen.cs [Design]",
+              "RelativeToolTip": "KhanhLinh\\UpdateCarScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-08-07T10:21:42.521Z",
               "EditorCaption": ""
             },
@@ -144,6 +156,10 @@
               "RelativeToolTip": "KhanhLinh\\UpdatePhieuXuatKho.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T10:04:39.187Z"
+=======
+              "WhenOpened": "2025-08-08T16:23:40.278Z",
+              "EditorCaption": " [Design]"
+>>>>>>> 6613a17dd17f82f4edf74fb8d2593f55b15200fd
             }
           ]
         },

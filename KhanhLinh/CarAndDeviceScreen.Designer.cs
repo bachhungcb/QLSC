@@ -84,13 +84,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.carDetail = new MetroFramework.Controls.MetroGrid();
-            this.vCarDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.carTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTableAdapter();
-            this.vCarDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vCarDetailTableAdapter();
-            this.vCarTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.vCarTableAdapter();
-            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,6 +96,13 @@
             this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isItemWithSerialDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.vCarDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.carTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTableAdapter();
+            this.vCarDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vCarDetailTableAdapter();
+            this.vCarTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.vCarTableAdapter();
+            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1)).BeginInit();
@@ -331,15 +331,15 @@
             this.carOverview.AllowUserToOrderColumns = true;
             this.carOverview.AllowUserToResizeRows = false;
             this.carOverview.AutoGenerateColumns = false;
-            this.carOverview.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.carOverview.BackgroundColor = System.Drawing.Color.White;
             this.carOverview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.carOverview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.carOverview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.carOverview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -373,7 +373,7 @@
             this.carOverview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.carOverview.EnableHeadersVisualStyles = false;
             this.carOverview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.carOverview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.carOverview.GridColor = System.Drawing.Color.White;
             this.carOverview.Location = new System.Drawing.Point(0, 31);
             this.carOverview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.carOverview.Name = "carOverview";
@@ -596,10 +596,10 @@
             this.carDetail.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.carDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.carDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
@@ -619,10 +619,10 @@
             this.isItemWithSerialDataGridViewCheckBoxColumn});
             this.carDetail.DataSource = this.vCarDetailBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.carDetail.DefaultCellStyle = dataGridViewCellStyle5;
@@ -649,49 +649,6 @@
             this.carDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.carDetail.Size = new System.Drawing.Size(1383, 274);
             this.carDetail.TabIndex = 2;
-            // 
-            // vCarDetailBindingSource
-            // 
-            this.vCarDetailBindingSource.DataMember = "vCarDetail";
-            this.vCarDetailBindingSource.DataSource = this.finalDataSet1BindingSource;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Chi tiết";
-            // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataMember = "Car";
-            this.carBindingSource.DataSource = this.finalDataSet1BindingSource;
-            // 
-            // carTableAdapter
-            // 
-            this.carTableAdapter.ClearBeforeFill = true;
-            // 
-            // vCarDetailTableAdapter
-            // 
-            this.vCarDetailTableAdapter.ClearBeforeFill = true;
-            // 
-            // vCarTableAdapter1
-            // 
-            this.vCarTableAdapter1.ClearBeforeFill = true;
-            // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 697);
-            this.statusBarUC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1407, 41);
-            this.statusBarUC1.TabIndex = 9;
             // 
             // idDataGridViewTextBoxColumn1
             // 
@@ -803,6 +760,49 @@
             this.isItemWithSerialDataGridViewCheckBoxColumn.Name = "isItemWithSerialDataGridViewCheckBoxColumn";
             this.isItemWithSerialDataGridViewCheckBoxColumn.ReadOnly = true;
             this.isItemWithSerialDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // vCarDetailBindingSource
+            // 
+            this.vCarDetailBindingSource.DataMember = "vCarDetail";
+            this.vCarDetailBindingSource.DataSource = this.finalDataSet1BindingSource;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 31);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Chi tiết";
+            // 
+            // carBindingSource
+            // 
+            this.carBindingSource.DataMember = "Car";
+            this.carBindingSource.DataSource = this.finalDataSet1BindingSource;
+            // 
+            // carTableAdapter
+            // 
+            this.carTableAdapter.ClearBeforeFill = true;
+            // 
+            // vCarDetailTableAdapter
+            // 
+            this.vCarDetailTableAdapter.ClearBeforeFill = true;
+            // 
+            // vCarTableAdapter1
+            // 
+            this.vCarTableAdapter1.ClearBeforeFill = true;
+            // 
+            // statusBarUC1
+            // 
+            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 697);
+            this.statusBarUC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.statusBarUC1.Name = "statusBarUC1";
+            this.statusBarUC1.Size = new System.Drawing.Size(1407, 41);
+            this.statusBarUC1.TabIndex = 9;
             // 
             // CarAndDeviceScreen
             // 

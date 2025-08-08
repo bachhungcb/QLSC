@@ -74,13 +74,13 @@
             this.carTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.ItemCode = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemUnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Warehouse = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.CarCode = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
@@ -240,7 +240,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.PNKCreatedAt);
             this.panel2.Controls.Add(this.label1);
@@ -253,18 +253,18 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(13, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1011, 309);
+            this.panel2.Size = new System.Drawing.Size(1011, 234);
             this.panel2.TabIndex = 11;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 206);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.Location = new System.Drawing.Point(33, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 31);
+            this.label3.Size = new System.Drawing.Size(56, 25);
             this.label3.TabIndex = 38;
-            this.label3.Text = "Tạo vào";
+            this.label3.Text = "Ngày";
             // 
             // PNKCreatedAt
             // 
@@ -272,22 +272,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PNKCreatedAt.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PNKCreatedAt.CustomFormat = "dd/MM/yyyy";
-            this.PNKCreatedAt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PNKCreatedAt.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.PNKCreatedAt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.PNKCreatedAt.Location = new System.Drawing.Point(32, 240);
+            this.PNKCreatedAt.Location = new System.Drawing.Point(142, 41);
             this.PNKCreatedAt.Name = "PNKCreatedAt";
-            this.PNKCreatedAt.Size = new System.Drawing.Size(269, 38);
+            this.PNKCreatedAt.Size = new System.Drawing.Size(172, 32);
             this.PNKCreatedAt.TabIndex = 37;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(711, 17);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(593, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 31);
+            this.label1.Size = new System.Drawing.Size(96, 25);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Tạo bởi";
+            this.label1.Text = "Người tạo";
             // 
             // PNKCreatedBy
             // 
@@ -295,11 +295,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PNKCreatedBy.DataSource = this.employeeBindingSource;
             this.PNKCreatedBy.DisplayMember = "Name";
-            this.PNKCreatedBy.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PNKCreatedBy.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.PNKCreatedBy.FormattingEnabled = true;
-            this.PNKCreatedBy.Location = new System.Drawing.Point(717, 51);
+            this.PNKCreatedBy.Location = new System.Drawing.Point(703, 83);
             this.PNKCreatedBy.Name = "PNKCreatedBy";
-            this.PNKCreatedBy.Size = new System.Drawing.Size(267, 39);
+            this.PNKCreatedBy.Size = new System.Drawing.Size(267, 33);
             this.PNKCreatedBy.TabIndex = 35;
             this.PNKCreatedBy.ValueMember = "Id";
             // 
@@ -316,56 +316,60 @@
             // DocStatus
             // 
             this.DocStatus.AutoSize = true;
-            this.DocStatus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocStatus.Location = new System.Drawing.Point(301, 17);
+            this.DocStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.DocStatus.Location = new System.Drawing.Point(33, 87);
             this.DocStatus.Name = "DocStatus";
-            this.DocStatus.Size = new System.Drawing.Size(116, 31);
+            this.DocStatus.Size = new System.Drawing.Size(96, 25);
             this.DocStatus.TabIndex = 34;
             this.DocStatus.Text = "Trạng thái";
             // 
             // PNKDocStatus
             // 
-            this.PNKDocStatus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PNKDocStatus.Location = new System.Drawing.Point(307, 51);
+            this.PNKDocStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PNKDocStatus.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.PNKDocStatus.Location = new System.Drawing.Point(142, 83);
             this.PNKDocStatus.Name = "PNKDocStatus";
-            this.PNKDocStatus.Size = new System.Drawing.Size(404, 38);
+            this.PNKDocStatus.Size = new System.Drawing.Size(425, 32);
             this.PNKDocStatus.TabIndex = 33;
             // 
             // PNKDescription
             // 
             this.PNKDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PNKDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PNKDescription.Location = new System.Drawing.Point(32, 150);
+            this.PNKDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PNKDescription.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.PNKDescription.Location = new System.Drawing.Point(142, 129);
+            this.PNKDescription.Multiline = true;
             this.PNKDescription.Name = "PNKDescription";
-            this.PNKDescription.Size = new System.Drawing.Size(952, 38);
+            this.PNKDescription.Size = new System.Drawing.Size(828, 65);
             this.PNKDescription.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 105);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label7.Location = new System.Drawing.Point(33, 129);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 31);
+            this.label7.Size = new System.Drawing.Size(87, 25);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Miêu tả";
+            this.label7.Text = "Diễn giải";
             // 
             // phieuNhapKhoDocNo
             // 
-            this.phieuNhapKhoDocNo.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phieuNhapKhoDocNo.Location = new System.Drawing.Point(32, 51);
+            this.phieuNhapKhoDocNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.phieuNhapKhoDocNo.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.phieuNhapKhoDocNo.Location = new System.Drawing.Point(441, 41);
             this.phieuNhapKhoDocNo.Name = "phieuNhapKhoDocNo";
-            this.phieuNhapKhoDocNo.Size = new System.Drawing.Size(243, 38);
+            this.phieuNhapKhoDocNo.Size = new System.Drawing.Size(243, 32);
             this.phieuNhapKhoDocNo.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 17);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(387, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 31);
+            this.label2.Size = new System.Drawing.Size(33, 25);
             this.label2.TabIndex = 18;
             this.label2.Text = "Số";
             // 
@@ -398,7 +402,7 @@
             this.addBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.addBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.Location = new System.Drawing.Point(850, 312);
+            this.addBtn.Location = new System.Drawing.Point(850, 375);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(134, 40);
             this.addBtn.TabIndex = 32;
@@ -423,12 +427,12 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.metroGrid1);
             this.panel1.Controls.Add(this.addBtn);
-            this.panel1.Location = new System.Drawing.Point(13, 368);
+            this.panel1.Location = new System.Drawing.Point(13, 305);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1011, 366);
+            this.panel1.Size = new System.Drawing.Size(1011, 429);
             this.panel1.TabIndex = 12;
             // 
             // metroGrid1
@@ -439,15 +443,15 @@
             this.metroGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.BackgroundColor = System.Drawing.Color.White;
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -461,23 +465,23 @@
             this.CarCode});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid1.GridColor = System.Drawing.Color.White;
             this.metroGrid1.Location = new System.Drawing.Point(26, 35);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
@@ -485,19 +489,11 @@
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 24;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(957, 262);
+            this.metroGrid1.Size = new System.Drawing.Size(957, 325);
             this.metroGrid1.TabIndex = 33;
+            this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             this.metroGrid1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellValueChanged);
             this.metroGrid1.CurrentCellDirtyStateChanged += new System.EventHandler(this.metroGrid1_CurrentCellDirtyStateChanged);
-            // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 740);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
-            this.statusBarUC1.TabIndex = 13;
             // 
             // ItemCode
             // 
@@ -555,10 +551,20 @@
             this.CarCode.ValueMember = "Id";
             this.CarCode.Width = 125;
             // 
+            // statusBarUC1
+            // 
+            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 740);
+            this.statusBarUC1.Name = "statusBarUC1";
+            this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
+            this.statusBarUC1.TabIndex = 13;
+            // 
             // AddPhieuNhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1029, 781);
             this.Controls.Add(this.statusBarUC1);
             this.Controls.Add(this.panel1);
