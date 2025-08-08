@@ -53,8 +53,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.conNormItemUnit = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.conNormItemName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.conNormCreatedBy = new System.Windows.Forms.ComboBox();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -236,15 +234,13 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.conNormItemQuantity);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.conNormItemCode);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.conNormItemUnit);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.conNormItemName);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.conNormCreatedBy);
             this.panel2.Controls.Add(this.conNormFinishDate);
@@ -265,81 +261,67 @@
             // 
             // conNormItemQuantity
             // 
+            this.conNormItemQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conNormItemQuantity.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conNormItemQuantity.Location = new System.Drawing.Point(657, 535);
+            this.conNormItemQuantity.Location = new System.Drawing.Point(352, 271);
             this.conNormItemQuantity.Name = "conNormItemQuantity";
-            this.conNormItemQuantity.Size = new System.Drawing.Size(294, 38);
+            this.conNormItemQuantity.Size = new System.Drawing.Size(354, 38);
             this.conNormItemQuantity.TabIndex = 49;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(651, 501);
+            this.label10.Location = new System.Drawing.Point(25, 275);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 31);
+            this.label10.Size = new System.Drawing.Size(276, 31);
             this.label10.TabIndex = 48;
-            this.label10.Text = "Số lượng";
+            this.label10.Text = "Số định mức (trên 100km)";
             // 
             // conNormItemCode
             // 
+            this.conNormItemCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conNormItemCode.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conNormItemCode.Location = new System.Drawing.Point(21, 440);
+            this.conNormItemCode.Location = new System.Drawing.Point(352, 472);
             this.conNormItemCode.Name = "conNormItemCode";
-            this.conNormItemCode.Size = new System.Drawing.Size(930, 38);
+            this.conNormItemCode.Size = new System.Drawing.Size(299, 38);
             this.conNormItemCode.TabIndex = 47;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 392);
+            this.label9.Location = new System.Drawing.Point(190, 473);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 31);
+            this.label9.Size = new System.Drawing.Size(112, 31);
             this.label9.TabIndex = 46;
-            this.label9.Text = "Mã vật dụng";
+            this.label9.Text = "Mã vật tư";
             // 
             // conNormItemUnit
             // 
+            this.conNormItemUnit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.conNormItemUnit.Enabled = false;
             this.conNormItemUnit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conNormItemUnit.Location = new System.Drawing.Point(353, 535);
+            this.conNormItemUnit.Location = new System.Drawing.Point(827, 210);
             this.conNormItemUnit.Name = "conNormItemUnit";
-            this.conNormItemUnit.Size = new System.Drawing.Size(298, 38);
+            this.conNormItemUnit.Size = new System.Drawing.Size(155, 38);
             this.conNormItemUnit.TabIndex = 45;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(347, 490);
+            this.label8.Location = new System.Drawing.Point(752, 214);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(220, 31);
+            this.label8.Size = new System.Drawing.Size(56, 31);
             this.label8.TabIndex = 44;
-            this.label8.Text = "Đơn vị cho vật dụng";
-            // 
-            // conNormItemName
-            // 
-            this.conNormItemName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conNormItemName.Location = new System.Drawing.Point(21, 535);
-            this.conNormItemName.Name = "conNormItemName";
-            this.conNormItemName.Size = new System.Drawing.Size(321, 38);
-            this.conNormItemName.TabIndex = 43;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 490);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 31);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Tên vật dụng";
+            this.label8.Text = "ĐVT";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 290);
+            this.label5.Location = new System.Drawing.Point(502, 92);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(118, 31);
             this.label5.TabIndex = 41;
@@ -351,9 +333,9 @@
             this.conNormCreatedBy.DisplayMember = "Name";
             this.conNormCreatedBy.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormCreatedBy.FormattingEnabled = true;
-            this.conNormCreatedBy.Location = new System.Drawing.Point(21, 338);
+            this.conNormCreatedBy.Location = new System.Drawing.Point(637, 88);
             this.conNormCreatedBy.Name = "conNormCreatedBy";
-            this.conNormCreatedBy.Size = new System.Drawing.Size(609, 39);
+            this.conNormCreatedBy.Size = new System.Drawing.Size(345, 39);
             this.conNormCreatedBy.TabIndex = 40;
             this.conNormCreatedBy.ValueMember = "Id";
             // 
@@ -380,20 +362,20 @@
             this.conNormFinishDate.CustomFormat = "dd/MM/yyyy";
             this.conNormFinishDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormFinishDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.conNormFinishDate.Location = new System.Drawing.Point(485, 52);
+            this.conNormFinishDate.Location = new System.Drawing.Point(590, 27);
             this.conNormFinishDate.Name = "conNormFinishDate";
-            this.conNormFinishDate.Size = new System.Drawing.Size(466, 38);
+            this.conNormFinishDate.Size = new System.Drawing.Size(162, 38);
             this.conNormFinishDate.TabIndex = 39;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(479, 18);
+            this.label2.Location = new System.Drawing.Point(419, 31);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 31);
+            this.label2.Size = new System.Drawing.Size(156, 31);
             this.label2.TabIndex = 38;
-            this.label2.Text = "Thời gian kết thúc";
+            this.label2.Text = "Ngày kết thúc";
             // 
             // conNormStartDate
             // 
@@ -403,20 +385,20 @@
             this.conNormStartDate.CustomFormat = "dd/MM/yyyy";
             this.conNormStartDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.conNormStartDate.Location = new System.Drawing.Point(21, 52);
+            this.conNormStartDate.Location = new System.Drawing.Point(187, 27);
             this.conNormStartDate.Name = "conNormStartDate";
-            this.conNormStartDate.Size = new System.Drawing.Size(463, 38);
+            this.conNormStartDate.Size = new System.Drawing.Size(159, 38);
             this.conNormStartDate.TabIndex = 37;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 18);
+            this.label1.Location = new System.Drawing.Point(25, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 31);
+            this.label1.Size = new System.Drawing.Size(153, 31);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Thời gian bắt đầu";
+            this.label1.Text = "Ngày bắt đầu";
             // 
             // conNormItemType
             // 
@@ -424,9 +406,9 @@
             this.conNormItemType.DisplayMember = "Name";
             this.conNormItemType.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormItemType.FormattingEnabled = true;
-            this.conNormItemType.Location = new System.Drawing.Point(636, 338);
+            this.conNormItemType.Location = new System.Drawing.Point(187, 210);
             this.conNormItemType.Name = "conNormItemType";
-            this.conNormItemType.Size = new System.Drawing.Size(315, 39);
+            this.conNormItemType.Size = new System.Drawing.Size(519, 39);
             this.conNormItemType.TabIndex = 35;
             this.conNormItemType.ValueMember = "Id";
             this.conNormItemType.SelectionChangeCommitted += new System.EventHandler(this.itemType_SelectionChangeCommitted);
@@ -440,11 +422,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(630, 290);
+            this.label7.Location = new System.Drawing.Point(25, 214);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 31);
+            this.label7.Size = new System.Drawing.Size(76, 31);
             this.label7.TabIndex = 34;
-            this.label7.Text = "Vật dụng";
+            this.label7.Text = "Vật tư";
             // 
             // addBtn
             // 
@@ -461,7 +443,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 103);
+            this.label4.Location = new System.Drawing.Point(25, 92);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 31);
             this.label4.TabIndex = 7;
@@ -469,17 +451,18 @@
             // 
             // conNormDescription
             // 
+            this.conNormDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.conNormDescription.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conNormDescription.Location = new System.Drawing.Point(21, 238);
+            this.conNormDescription.Location = new System.Drawing.Point(187, 149);
             this.conNormDescription.Name = "conNormDescription";
-            this.conNormDescription.Size = new System.Drawing.Size(930, 38);
+            this.conNormDescription.Size = new System.Drawing.Size(795, 38);
             this.conNormDescription.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 204);
+            this.label3.Location = new System.Drawing.Point(25, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 31);
             this.label3.TabIndex = 5;
@@ -491,9 +474,9 @@
             this.conNormCarTypeId.DisplayMember = "Code";
             this.conNormCarTypeId.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormCarTypeId.FormattingEnabled = true;
-            this.conNormCarTypeId.Location = new System.Drawing.Point(21, 151);
+            this.conNormCarTypeId.Location = new System.Drawing.Point(187, 88);
             this.conNormCarTypeId.Name = "conNormCarTypeId";
-            this.conNormCarTypeId.Size = new System.Drawing.Size(930, 39);
+            this.conNormCarTypeId.Size = new System.Drawing.Size(269, 39);
             this.conNormCarTypeId.TabIndex = 0;
             this.conNormCarTypeId.ValueMember = "Id";
             // 
@@ -582,8 +565,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox conNormCreatedBy;
-        private System.Windows.Forms.TextBox conNormItemName;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox conNormItemUnit;
         private System.Windows.Forms.Label label9;

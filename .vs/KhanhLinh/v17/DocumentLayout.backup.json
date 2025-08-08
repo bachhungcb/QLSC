@@ -1,42 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\KhanhLinh\\",
+  "WorkspaceRootPath": "F:\\Solution\\Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\addphieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\addphieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|f:\\khanhlinh\\khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatephieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\addphieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\addphieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|f:\\solution\\solution\\khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updatecarscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\phieuxuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\updateemployeescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\updateemployeescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 465,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,110 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddPhieuXuatKho.cs",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\AddPhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\AddPhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\AddPhieuXuatKho.cs",
-              "RelativeToolTip": "KhanhLinh\\AddPhieuXuatKho.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAD4v4gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T17:31:59.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateCarScreen.cs",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\UpdateCarScreen.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\UpdateCarScreen.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\UpdateCarScreen.cs",
-              "RelativeToolTip": "KhanhLinh\\UpdateCarScreen.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAvwJcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:57:14.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "UpdateCarScreen.cs [Design]",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\UpdateCarScreen.cs",
+              "DocumentMoniker": "F:\\Solution\\Solution\\KhanhLinh\\UpdateCarScreen.cs",
               "RelativeDocumentMoniker": "KhanhLinh\\UpdateCarScreen.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\UpdateCarScreen.cs [Design]",
+              "ToolTip": "F:\\Solution\\Solution\\KhanhLinh\\UpdateCarScreen.cs [Design]",
               "RelativeToolTip": "KhanhLinh\\UpdateCarScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:57:12.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateEmployeeScreen.cs [Design]",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\UpdateEmployeeScreen.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\UpdateEmployeeScreen.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\UpdateEmployeeScreen.cs [Design]",
-              "RelativeToolTip": "KhanhLinh\\UpdateEmployeeScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:41:34.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdatePhieuXuatKho.cs [Design]",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\UpdatePhieuXuatKho.cs [Design]",
-              "RelativeToolTip": "KhanhLinh\\UpdatePhieuXuatKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:15:09.844Z",
+              "WhenOpened": "2025-08-08T16:23:40.278Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdatePhieuXuatKho.cs",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "RelativeToolTip": "KhanhLinh\\UpdatePhieuXuatKho.cs",
-              "ViewState": "AgIAAJQBAAAAAAAAAAA1wKcBAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:18:15.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PhieuXuatKho.cs",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\PhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\PhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\PhieuXuatKho.cs",
-              "RelativeToolTip": "KhanhLinh\\PhieuXuatKho.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAYwFsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:14:57.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddPhieuXuatKho.cs [Design]",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\AddPhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\AddPhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\AddPhieuXuatKho.cs [Design]",
-              "RelativeToolTip": "KhanhLinh\\AddPhieuXuatKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:14:34.033Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PhieuXuatKho.cs [Design]",
-              "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\PhieuXuatKho.cs",
-              "RelativeDocumentMoniker": "KhanhLinh\\PhieuXuatKho.cs",
-              "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\PhieuXuatKho.cs [Design]",
-              "RelativeToolTip": "KhanhLinh\\PhieuXuatKho.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T16:14:26.976Z"
             }
           ]
         },

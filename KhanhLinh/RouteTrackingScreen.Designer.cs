@@ -52,10 +52,6 @@
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.vRouteTrackingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.finalDataSet = new KhanhLinh.FinalDataSet();
-            this.vRouteTrackingTableAdapter = new KhanhLinh.FinalDataSetTableAdapters.vRouteTrackingTableAdapter();
-            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +62,10 @@
             this.startDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalKmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.routeLengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vRouteTrackingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet = new KhanhLinh.FinalDataSet();
+            this.vRouteTrackingTableAdapter = new KhanhLinh.FinalDataSetTableAdapters.vRouteTrackingTableAdapter();
+            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -251,10 +251,10 @@
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -301,29 +301,6 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(1011, 554);
             this.metroGrid1.TabIndex = 0;
-            // 
-            // vRouteTrackingBindingSource
-            // 
-            this.vRouteTrackingBindingSource.DataMember = "vRouteTracking";
-            this.vRouteTrackingBindingSource.DataSource = this.finalDataSet;
-            // 
-            // finalDataSet
-            // 
-            this.finalDataSet.DataSetName = "FinalDataSet";
-            this.finalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vRouteTrackingTableAdapter
-            // 
-            this.vRouteTrackingTableAdapter.ClearBeforeFill = true;
-            // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 619);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
-            this.statusBarUC1.TabIndex = 8;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -417,6 +394,29 @@
             this.routeLengthDataGridViewTextBoxColumn.Name = "routeLengthDataGridViewTextBoxColumn";
             this.routeLengthDataGridViewTextBoxColumn.ReadOnly = true;
             this.routeLengthDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // vRouteTrackingBindingSource
+            // 
+            this.vRouteTrackingBindingSource.DataMember = "vRouteTracking";
+            this.vRouteTrackingBindingSource.DataSource = this.finalDataSet;
+            // 
+            // finalDataSet
+            // 
+            this.finalDataSet.DataSetName = "FinalDataSet";
+            this.finalDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vRouteTrackingTableAdapter
+            // 
+            this.vRouteTrackingTableAdapter.ClearBeforeFill = true;
+            // 
+            // statusBarUC1
+            // 
+            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 619);
+            this.statusBarUC1.Name = "statusBarUC1";
+            this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
+            this.statusBarUC1.TabIndex = 8;
             // 
             // RouteTrackingScreen
             // 

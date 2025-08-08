@@ -35,25 +35,29 @@
             // 
             // statusBarUC1
             // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.BackColor = System.Drawing.Color.White;
             this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 619);
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 620);
             this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1015, 41);
+            this.statusBarUC1.Size = new System.Drawing.Size(1015, 40);
             this.statusBarUC1.TabIndex = 1;
+            this.statusBarUC1.Load += new System.EventHandler(this.statusBarUC1_Load);
             // 
             // menuStripUC2
             // 
+            this.menuStripUC2.BackColor = System.Drawing.Color.White;
             this.menuStripUC2.Dock = System.Windows.Forms.DockStyle.Top;
             this.menuStripUC2.Location = new System.Drawing.Point(0, 0);
             this.menuStripUC2.Name = "menuStripUC2";
             this.menuStripUC2.Size = new System.Drawing.Size(1015, 41);
             this.menuStripUC2.TabIndex = 0;
+            this.menuStripUC2.Load += new System.EventHandler(this.menuStripUC2_Load);
             // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1015, 660);
             this.Controls.Add(this.statusBarUC1);
             this.Controls.Add(this.menuStripUC2);

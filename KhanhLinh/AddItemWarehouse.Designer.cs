@@ -63,7 +63,7 @@
             // 
             this.metroPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.metroPanel2.BackColor = System.Drawing.Color.White;
             this.metroPanel2.Controls.Add(this.addBtn);
             this.metroPanel2.Controls.Add(this.itemName);
             this.metroPanel2.Controls.Add(this.label2);
@@ -94,39 +94,42 @@
             // 
             // itemName
             // 
+            this.itemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.itemName.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemName.Location = new System.Drawing.Point(63, 206);
+            this.itemName.Location = new System.Drawing.Point(121, 116);
             this.itemName.Name = "itemName";
-            this.itemName.Size = new System.Drawing.Size(911, 43);
+            this.itemName.Size = new System.Drawing.Size(832, 43);
             this.itemName.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(57, 166);
+            this.label2.Location = new System.Drawing.Point(43, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 31);
+            this.label2.Size = new System.Drawing.Size(49, 31);
             this.label2.TabIndex = 4;
-            this.label2.Text = "2. Tên";
+            this.label2.Text = "Tên";
             // 
             // itemCode
             // 
+            this.itemCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.itemCode.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemCode.Location = new System.Drawing.Point(63, 100);
+            this.itemCode.Location = new System.Drawing.Point(121, 58);
             this.itemCode.Name = "itemCode";
-            this.itemCode.Size = new System.Drawing.Size(911, 43);
+            this.itemCode.Size = new System.Drawing.Size(832, 43);
             this.itemCode.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(57, 60);
+            this.label1.Location = new System.Drawing.Point(43, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 31);
+            this.label1.Size = new System.Drawing.Size(47, 31);
             this.label1.TabIndex = 2;
-            this.label1.Text = "1. Mã";
+            this.label1.Text = "Mã";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStrip1
             // 

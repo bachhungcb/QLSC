@@ -57,5 +57,15 @@ namespace KhanhLinh
                 }
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemUnitDesc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

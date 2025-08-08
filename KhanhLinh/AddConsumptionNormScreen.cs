@@ -64,7 +64,7 @@ namespace KhanhLinh
                         ItemName = result["Name"].ToString();
                         ItemUnit = result["Unit"].ToString();
 
-                        conNormItemName.Text = ItemName;
+                        //conNormItemName.Text = ItemName;
                         conNormItemCode.Text = ItemCode;
                         conNormItemUnit.Text = ItemUnit;
                     }

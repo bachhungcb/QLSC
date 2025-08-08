@@ -72,6 +72,8 @@
             this.departmentTableAdapter = new KhanhLinh.KhanhLinhDataSet1TableAdapters.DepartmentTableAdapter();
             this.finalDataSet = new KhanhLinh.FinalDataSet();
             this.statusBarUC1 = new KhanhLinh.StatusBarUC();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.departmentBindingSource)).BeginInit();
@@ -239,7 +241,9 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.addBtn);
             this.panel2.Controls.Add(this.empIsRepairMan);
             this.panel2.Controls.Add(this.empJobSkillLevel);
@@ -265,91 +269,93 @@
             // 
             // addBtn
             // 
-            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.Location = new System.Drawing.Point(862, 460);
+            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.addBtn.Location = new System.Drawing.Point(32, 480);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(134, 42);
+            this.addBtn.Size = new System.Drawing.Size(171, 42);
             this.addBtn.TabIndex = 32;
-            this.addBtn.Text = "Thêm";
+            this.addBtn.Text = "Lưu và đóng";
             this.addBtn.UseVisualStyleBackColor = true;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // empIsRepairMan
             // 
             this.empIsRepairMan.AutoSize = true;
-            this.empIsRepairMan.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empIsRepairMan.Location = new System.Drawing.Point(32, 465);
+            this.empIsRepairMan.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empIsRepairMan.Location = new System.Drawing.Point(771, 304);
             this.empIsRepairMan.Name = "empIsRepairMan";
-            this.empIsRepairMan.Size = new System.Drawing.Size(245, 35);
+            this.empIsRepairMan.Size = new System.Drawing.Size(207, 29);
             this.empIsRepairMan.TabIndex = 31;
             this.empIsRepairMan.Text = "Công nhân sửa chữa";
             this.empIsRepairMan.UseVisualStyleBackColor = true;
             // 
             // empJobSkillLevel
             // 
-            this.empJobSkillLevel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empJobSkillLevel.Location = new System.Drawing.Point(32, 405);
+            this.empJobSkillLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empJobSkillLevel.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empJobSkillLevel.Location = new System.Drawing.Point(682, 246);
             this.empJobSkillLevel.Name = "empJobSkillLevel";
-            this.empJobSkillLevel.Size = new System.Drawing.Size(964, 38);
+            this.empJobSkillLevel.Size = new System.Drawing.Size(296, 32);
             this.empJobSkillLevel.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 377);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label7.Location = new System.Drawing.Point(588, 249);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 25);
+            this.label7.Size = new System.Drawing.Size(81, 25);
             this.label7.TabIndex = 28;
             this.label7.Text = "Trình độ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(286, 283);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label6.Location = new System.Drawing.Point(27, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 25);
+            this.label6.Size = new System.Drawing.Size(95, 25);
             this.label6.TabIndex = 27;
             this.label6.Text = "Quê quán";
             // 
             // empBornPlace
             // 
-            this.empBornPlace.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empBornPlace.Location = new System.Drawing.Point(291, 323);
+            this.empBornPlace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empBornPlace.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empBornPlace.Location = new System.Drawing.Point(148, 246);
             this.empBornPlace.Name = "empBornPlace";
-            this.empBornPlace.Size = new System.Drawing.Size(705, 38);
+            this.empBornPlace.Size = new System.Drawing.Size(418, 32);
             this.empBornPlace.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 283);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label5.Location = new System.Drawing.Point(665, 180);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 25);
+            this.label5.Size = new System.Drawing.Size(84, 25);
             this.label5.TabIndex = 25;
             this.label5.Text = "Giới tính";
             // 
             // empGender
             // 
-            this.empGender.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empGender.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.empGender.FormattingEnabled = true;
             this.empGender.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.empGender.Location = new System.Drawing.Point(32, 322);
+            this.empGender.Location = new System.Drawing.Point(763, 177);
             this.empGender.Name = "empGender";
-            this.empGender.Size = new System.Drawing.Size(253, 39);
+            this.empGender.Size = new System.Drawing.Size(215, 33);
             this.empGender.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(722, 187);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label4.Location = new System.Drawing.Point(381, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 23;
             this.label4.Text = "Ngày sinh";
             // 
@@ -359,64 +365,67 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.empDOB.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empDOB.CustomFormat = "dd/MM/yyyy";
-            this.empDOB.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empDOB.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.empDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.empDOB.Location = new System.Drawing.Point(727, 231);
+            this.empDOB.Location = new System.Drawing.Point(478, 177);
             this.empDOB.Name = "empDOB";
-            this.empDOB.Size = new System.Drawing.Size(269, 38);
+            this.empDOB.Size = new System.Drawing.Size(157, 32);
             this.empDOB.TabIndex = 22;
             // 
             // empPhoneNumber
             // 
-            this.empPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empPhoneNumber.Location = new System.Drawing.Point(32, 231);
+            this.empPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empPhoneNumber.Location = new System.Drawing.Point(148, 177);
             this.empPhoneNumber.Name = "empPhoneNumber";
-            this.empPhoneNumber.Size = new System.Drawing.Size(687, 38);
+            this.empPhoneNumber.Size = new System.Drawing.Size(218, 32);
             this.empPhoneNumber.TabIndex = 21;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 187);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.Location = new System.Drawing.Point(27, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.Size = new System.Drawing.Size(45, 25);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Số điện thoại";
+            this.label3.Text = "SĐT";
             // 
             // empName
             // 
-            this.empName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empName.Location = new System.Drawing.Point(32, 131);
+            this.empName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empName.Location = new System.Drawing.Point(148, 108);
             this.empName.Name = "empName";
-            this.empName.Size = new System.Drawing.Size(689, 38);
+            this.empName.Size = new System.Drawing.Size(830, 32);
             this.empName.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 103);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(27, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 25);
+            this.label2.Size = new System.Drawing.Size(41, 25);
             this.label2.TabIndex = 18;
             this.label2.Text = "Tên";
             // 
             // empCode
             // 
-            this.empCode.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empCode.Location = new System.Drawing.Point(32, 46);
+            this.empCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empCode.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empCode.Location = new System.Drawing.Point(148, 39);
             this.empCode.Name = "empCode";
-            this.empCode.Size = new System.Drawing.Size(964, 38);
+            this.empCode.Size = new System.Drawing.Size(386, 32);
             this.empCode.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 18);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(27, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 25);
+            this.label1.Size = new System.Drawing.Size(39, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "Mã";
             // 
@@ -426,11 +435,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.departmentBox.DataSource = this.departmentBindingSource;
             this.departmentBox.DisplayMember = "Name";
-            this.departmentBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.departmentBox.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.departmentBox.FormattingEnabled = true;
-            this.departmentBox.Location = new System.Drawing.Point(727, 130);
+            this.departmentBox.Location = new System.Drawing.Point(682, 39);
             this.departmentBox.Name = "departmentBox";
-            this.departmentBox.Size = new System.Drawing.Size(269, 39);
+            this.departmentBox.Size = new System.Drawing.Size(296, 33);
             this.departmentBox.TabIndex = 14;
             this.departmentBox.ValueMember = "Id";
             // 
@@ -447,12 +456,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(722, 103);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label8.Location = new System.Drawing.Point(556, 42);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 25);
+            this.label8.Size = new System.Drawing.Size(82, 25);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Phòng/ban";
+            this.label8.Text = "Bộ phận";
             // 
             // departmentTableAdapter
             // 
@@ -471,6 +480,27 @@
             this.statusBarUC1.Name = "statusBarUC1";
             this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
             this.statusBarUC1.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button1.Location = new System.Drawing.Point(223, 480);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 42);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Lưu và thêm mới";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MistyRose;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button2.Location = new System.Drawing.Point(440, 480);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 42);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Hủy bỏ";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // AddEmployeeScreen
             // 
@@ -541,5 +571,7 @@
         private System.Windows.Forms.ToolStripMenuItem danhSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
         private StatusBarUC statusBarUC1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

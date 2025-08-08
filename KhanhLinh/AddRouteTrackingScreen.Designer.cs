@@ -238,7 +238,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.routeTrackingRouteLength);
             this.panel2.Controls.Add(this.label5);
@@ -267,17 +267,17 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 102);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label8.Location = new System.Drawing.Point(30, 156);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 25);
+            this.label8.Size = new System.Drawing.Size(87, 25);
             this.label8.TabIndex = 42;
-            this.label8.Text = "Miêu tả";
+            this.label8.Text = "Diễn giải";
             // 
             // routeTrackingRouteLength
             // 
             this.routeTrackingRouteLength.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingRouteLength.Location = new System.Drawing.Point(683, 322);
+            this.routeTrackingRouteLength.Location = new System.Drawing.Point(318, 501);
             this.routeTrackingRouteLength.Name = "routeTrackingRouteLength";
             this.routeTrackingRouteLength.Size = new System.Drawing.Size(310, 38);
             this.routeTrackingRouteLength.TabIndex = 41;
@@ -286,7 +286,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(678, 294);
+            this.label5.Location = new System.Drawing.Point(108, 501);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 25);
             this.label5.TabIndex = 40;
@@ -294,39 +294,41 @@
             // 
             // routeTrackingTotalKm
             // 
-            this.routeTrackingTotalKm.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingTotalKm.Location = new System.Drawing.Point(32, 319);
+            this.routeTrackingTotalKm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeTrackingTotalKm.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeTrackingTotalKm.Location = new System.Drawing.Point(665, 256);
             this.routeTrackingTotalKm.Name = "routeTrackingTotalKm";
-            this.routeTrackingTotalKm.Size = new System.Drawing.Size(316, 38);
+            this.routeTrackingTotalKm.Size = new System.Drawing.Size(310, 32);
             this.routeTrackingTotalKm.TabIndex = 39;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 291);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label6.Location = new System.Drawing.Point(539, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 25);
+            this.label6.Size = new System.Drawing.Size(111, 25);
             this.label6.TabIndex = 38;
             this.label6.Text = "Tổng số Km";
             // 
             // routeTrackingRouteKm
             // 
-            this.routeTrackingRouteKm.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingRouteKm.Location = new System.Drawing.Point(683, 219);
+            this.routeTrackingRouteKm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeTrackingRouteKm.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeTrackingRouteKm.Location = new System.Drawing.Point(665, 204);
             this.routeTrackingRouteKm.Name = "routeTrackingRouteKm";
-            this.routeTrackingRouteKm.Size = new System.Drawing.Size(310, 38);
+            this.routeTrackingRouteKm.Size = new System.Drawing.Size(310, 32);
             this.routeTrackingRouteKm.TabIndex = 37;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(678, 191);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(539, 208);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 25);
+            this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 36;
-            this.label2.Text = "Số Km của hành trình";
+            this.label2.Text = "Số Km tuyến";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // routeTrackingRouteId
@@ -335,11 +337,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.routeTrackingRouteId.DataSource = this.routeBindingSource;
             this.routeTrackingRouteId.DisplayMember = "Name";
-            this.routeTrackingRouteId.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTrackingRouteId.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.routeTrackingRouteId.FormattingEnabled = true;
-            this.routeTrackingRouteId.Location = new System.Drawing.Point(544, 46);
+            this.routeTrackingRouteId.Location = new System.Drawing.Point(692, 100);
             this.routeTrackingRouteId.Name = "routeTrackingRouteId";
-            this.routeTrackingRouteId.Size = new System.Drawing.Size(449, 39);
+            this.routeTrackingRouteId.Size = new System.Drawing.Size(283, 33);
             this.routeTrackingRouteId.TabIndex = 35;
             this.routeTrackingRouteId.ValueMember = "Id";
             // 
@@ -361,12 +363,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(544, 18);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label9.Location = new System.Drawing.Point(579, 104);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 25);
+            this.label9.Size = new System.Drawing.Size(63, 25);
             this.label9.TabIndex = 34;
-            this.label9.Text = "Hành trình";
+            this.label9.Text = "Tuyến";
             // 
             // routeTrackingCarId
             // 
@@ -374,11 +376,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.routeTrackingCarId.DataSource = this.carBindingSource;
             this.routeTrackingCarId.DisplayMember = "Name";
-            this.routeTrackingCarId.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTrackingCarId.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.routeTrackingCarId.FormattingEnabled = true;
-            this.routeTrackingCarId.Location = new System.Drawing.Point(32, 46);
+            this.routeTrackingCarId.Location = new System.Drawing.Point(133, 100);
             this.routeTrackingCarId.Name = "routeTrackingCarId";
-            this.routeTrackingCarId.Size = new System.Drawing.Size(506, 39);
+            this.routeTrackingCarId.Size = new System.Drawing.Size(411, 33);
             this.routeTrackingCarId.TabIndex = 33;
             this.routeTrackingCarId.ValueMember = "Id";
             // 
@@ -400,10 +402,11 @@
             // 
             // routeTrackingDesc
             // 
-            this.routeTrackingDesc.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingDesc.Location = new System.Drawing.Point(32, 139);
+            this.routeTrackingDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeTrackingDesc.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeTrackingDesc.Location = new System.Drawing.Point(133, 152);
             this.routeTrackingDesc.Name = "routeTrackingDesc";
-            this.routeTrackingDesc.Size = new System.Drawing.Size(961, 38);
+            this.routeTrackingDesc.Size = new System.Drawing.Size(842, 32);
             this.routeTrackingDesc.TabIndex = 29;
             // 
             // label7
@@ -419,12 +422,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(362, 291);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label4.Location = new System.Drawing.Point(30, 52);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 25);
+            this.label4.Size = new System.Drawing.Size(56, 25);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Ngày bắt đầu";
+            this.label4.Text = "Ngày";
             // 
             // routeTrackingStartDate
             // 
@@ -432,56 +435,60 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.routeTrackingStartDate.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.routeTrackingStartDate.CustomFormat = "dd/MM/yyyy";
-            this.routeTrackingStartDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTrackingStartDate.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.routeTrackingStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.routeTrackingStartDate.Location = new System.Drawing.Point(367, 319);
+            this.routeTrackingStartDate.Location = new System.Drawing.Point(133, 48);
             this.routeTrackingStartDate.Name = "routeTrackingStartDate";
-            this.routeTrackingStartDate.Size = new System.Drawing.Size(299, 38);
+            this.routeTrackingStartDate.Size = new System.Drawing.Size(299, 32);
             this.routeTrackingStartDate.TabIndex = 22;
+            this.routeTrackingStartDate.ValueChanged += new System.EventHandler(this.routeTrackingStartDate_ValueChanged);
             // 
             // routeTrackingOthersKm
             // 
-            this.routeTrackingOthersKm.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingOthersKm.Location = new System.Drawing.Point(367, 219);
+            this.routeTrackingOthersKm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.routeTrackingOthersKm.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeTrackingOthersKm.Location = new System.Drawing.Point(185, 256);
             this.routeTrackingOthersKm.Name = "routeTrackingOthersKm";
-            this.routeTrackingOthersKm.Size = new System.Drawing.Size(299, 38);
+            this.routeTrackingOthersKm.Size = new System.Drawing.Size(316, 32);
             this.routeTrackingOthersKm.TabIndex = 21;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(362, 191);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label3.Location = new System.Drawing.Point(30, 260);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 25);
+            this.label3.Size = new System.Drawing.Size(148, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "Số Km phát sinh";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // empName
             // 
-            this.empName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.empName.Location = new System.Drawing.Point(32, 219);
+            this.empName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.empName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.empName.Location = new System.Drawing.Point(185, 204);
             this.empName.Name = "empName";
-            this.empName.Size = new System.Drawing.Size(316, 38);
+            this.empName.Size = new System.Drawing.Size(316, 32);
             this.empName.TabIndex = 19;
             // 
             // routeTrackingMobilKm
             // 
             this.routeTrackingMobilKm.AutoSize = true;
-            this.routeTrackingMobilKm.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTrackingMobilKm.Location = new System.Drawing.Point(33, 191);
+            this.routeTrackingMobilKm.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.routeTrackingMobilKm.Location = new System.Drawing.Point(30, 208);
             this.routeTrackingMobilKm.Name = "routeTrackingMobilKm";
-            this.routeTrackingMobilKm.Size = new System.Drawing.Size(146, 25);
+            this.routeTrackingMobilKm.Size = new System.Drawing.Size(150, 25);
             this.routeTrackingMobilKm.TabIndex = 18;
             this.routeTrackingMobilKm.Text = "Số Km huy động";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 18);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(30, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 25);
+            this.label1.Size = new System.Drawing.Size(33, 25);
             this.label1.TabIndex = 16;
             this.label1.Text = "Xe";
             // 

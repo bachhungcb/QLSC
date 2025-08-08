@@ -53,6 +53,13 @@
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isItemWithSerialDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.vItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.finalDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
@@ -62,13 +69,6 @@
             this.itemTableAdapter = new KhanhLinh.KhanhLinhDataSet1TableAdapters.ItemTableAdapter();
             this.vItemTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vItemTableAdapter();
             this.statusBarUC1 = new KhanhLinh.StatusBarUC();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isItemWithSerialDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -264,10 +264,10 @@
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -282,10 +282,10 @@
             this.isActiveDataGridViewCheckBoxColumn});
             this.metroGrid1.DataSource = this.vItemBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
@@ -311,53 +311,6 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(1020, 464);
             this.metroGrid1.TabIndex = 4;
-            // 
-            // vItemBindingSource
-            // 
-            this.vItemBindingSource.DataMember = "vItem";
-            this.vItemBindingSource.DataSource = this.finalDataSet1BindingSource;
-            // 
-            // finalDataSet1BindingSource
-            // 
-            this.finalDataSet1BindingSource.DataSource = this.finalDataSet1;
-            this.finalDataSet1BindingSource.Position = 0;
-            // 
-            // finalDataSet1
-            // 
-            this.finalDataSet1.DataSetName = "FinalDataSet1";
-            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemBindingSource
-            // 
-            this.itemBindingSource.DataMember = "Item";
-            this.itemBindingSource.DataSource = this.khanhLinhDataSet1BindingSource;
-            // 
-            // khanhLinhDataSet1BindingSource
-            // 
-            this.khanhLinhDataSet1BindingSource.DataSource = this.khanhLinhDataSet1;
-            this.khanhLinhDataSet1BindingSource.Position = 0;
-            // 
-            // khanhLinhDataSet1
-            // 
-            this.khanhLinhDataSet1.DataSetName = "KhanhLinhDataSet1";
-            this.khanhLinhDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemTableAdapter
-            // 
-            this.itemTableAdapter.ClearBeforeFill = true;
-            // 
-            // vItemTableAdapter
-            // 
-            this.vItemTableAdapter.ClearBeforeFill = true;
-            // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 510);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1044, 41);
-            this.statusBarUC1.TabIndex = 4;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -422,6 +375,53 @@
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
             this.isActiveDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // vItemBindingSource
+            // 
+            this.vItemBindingSource.DataMember = "vItem";
+            this.vItemBindingSource.DataSource = this.finalDataSet1BindingSource;
+            // 
+            // finalDataSet1BindingSource
+            // 
+            this.finalDataSet1BindingSource.DataSource = this.finalDataSet1;
+            this.finalDataSet1BindingSource.Position = 0;
+            // 
+            // finalDataSet1
+            // 
+            this.finalDataSet1.DataSetName = "FinalDataSet1";
+            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemBindingSource
+            // 
+            this.itemBindingSource.DataMember = "Item";
+            this.itemBindingSource.DataSource = this.khanhLinhDataSet1BindingSource;
+            // 
+            // khanhLinhDataSet1BindingSource
+            // 
+            this.khanhLinhDataSet1BindingSource.DataSource = this.khanhLinhDataSet1;
+            this.khanhLinhDataSet1BindingSource.Position = 0;
+            // 
+            // khanhLinhDataSet1
+            // 
+            this.khanhLinhDataSet1.DataSetName = "KhanhLinhDataSet1";
+            this.khanhLinhDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemTableAdapter
+            // 
+            this.itemTableAdapter.ClearBeforeFill = true;
+            // 
+            // vItemTableAdapter
+            // 
+            this.vItemTableAdapter.ClearBeforeFill = true;
+            // 
+            // statusBarUC1
+            // 
+            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
+            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.statusBarUC1.Location = new System.Drawing.Point(0, 510);
+            this.statusBarUC1.Name = "statusBarUC1";
+            this.statusBarUC1.Size = new System.Drawing.Size(1044, 41);
+            this.statusBarUC1.TabIndex = 4;
             // 
             // ItemScreen
             // 
