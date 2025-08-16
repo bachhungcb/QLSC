@@ -240,20 +240,20 @@ namespace KhanhLinh
         {
             CarAndDeviceScreen carAndDeviceScreen = new CarAndDeviceScreen();
             carAndDeviceScreen.Show();
-            this.Hide();
+             
         }
 
         private void danhMụcKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WarehouseManagement warehouseManagement = new WarehouseManagement();
-            this.Hide();
+             
             warehouseManagement.Show();
         }
 
         private void danhMụcNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeScreen employeeScreen = new EmployeeScreen();
-            this.Hide();
+             
             employeeScreen.Show();
         }
 
@@ -261,63 +261,63 @@ namespace KhanhLinh
         private void danhMụcBộPhậnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DepartmentScreen departmentScreen = new DepartmentScreen();
-            this.Hide();
+             
             departmentScreen.Show();
         }
 
         private void danhMụcLoạiXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarTypeScreen carTypeScreen = new CarTypeScreen();
-            this.Hide();
+             
             carTypeScreen.Show();
         }
 
         private void danhMụcCôngViệcSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairJobScreen repairJobScreen = new RepairJobScreen();
-            this.Hide();
+             
             repairJobScreen.Show();
         }
 
         private void danhMụcVậtTưHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ItemScreen itemScreen = new ItemScreen();
-            this.Hide();
+             
             itemScreen.Show();
         }
 
         private void địnhMứcVậtTưTiêuHaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConsumptionNormScreen consumptionNormScreen = new ConsumptionNormScreen();
-            this.Hide();
+             
             consumptionNormScreen.Show();
         }
 
         private void địnhMứcVậtTưSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairNormScreen repairNormScreen = new RepairNormScreen();
-            this.Hide();
+             
             repairNormScreen.Show();
         }
 
         private void phiếuTheoDõiHànhTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RouteTrackingScreen routeTrackingScreen = new RouteTrackingScreen();
-            this.Hide();
+             
             routeTrackingScreen.Show();
         }
 
         private void phiếuNhậpKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhieuNhapKho phieuNhapKho = new PhieuNhapKho();
-            this.Hide();
+             
             phieuNhapKho.Show();
         }
 
         private void phiếuXuấtKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhieuXuatKho phieuXuatKho = new PhieuXuatKho();
-            this.Hide();
+             
             phieuXuatKho.Show();
         }
 
@@ -329,8 +329,111 @@ namespace KhanhLinh
         private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhieuNhapKho phieuNhapKho = new PhieuNhapKho();
-            this.Hide();
+             
             phieuNhapKho.Show();
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+
+            string DocCode = "PN";
+            string DocNo = phieuNhapKhoDocNo.Text.ToString().Trim();
+            string DocStatus = PNKDocStatus.Text.ToString().Trim();
+            string Description = PNKDescription.Text.ToString().Trim();
+            Guid CreatedBy = Guid.Parse(PNKCreatedBy.SelectedValue.ToString().Trim());
+            DateTime CreatedAt = PNKCreatedAt.Value;
+
+            using (SqlConnection connect = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    if (connect.State != ConnectionState.Open)
+                    {
+                        connect.Open();
+                    }
+
+                    SqlCommand cmd = new SqlCommand("UpdatePNK", connect);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@Id", phieuNhapKhoId);
+                    cmd.Parameters.AddWithValue("@DocCode", DocCode);
+                    cmd.Parameters.AddWithValue("@DocNo", DocNo);
+                    cmd.Parameters.AddWithValue("@Description", Description);
+                    cmd.Parameters.AddWithValue("@DocStatus", DocStatus);
+                    cmd.Parameters.AddWithValue("@CreatedBy", CreatedBy);
+                    cmd.Parameters.AddWithValue("@CreatedAt", CreatedAt);
+
+                    cmd.ExecuteNonQuery();
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message,
+                                    "Lỗi",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+
+            foreach (DataGridViewRow row in metroGrid1.Rows)
+            {
+                if (row.IsNewRow) continue;
+                var item = new InventoryVoucherDetail
+                {
+                    ItemId = row.Cells["ItemCode"].Value?.ToString(),
+                    ItemCode = row.Cells["ItemCode"].FormattedValue?.ToString(),
+                    ItemName = row.Cells["ItemName"].Value?.ToString(),
+                    Unit = row.Cells["ItemUnit"].Value?.ToString(),
+                    Quantity = decimal.TryParse(row.Cells["Quantity"].Value?.ToString(), out decimal qty) ? qty : 0,
+                    WarehouseCode = row.Cells["Warehouse"].Value?.ToString(),
+                    CarCode = row.Cells["CarCode"].Value?.ToString()
+                };
+
+                using (SqlConnection connect = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        if (connect.State != ConnectionState.Open)
+                        {
+                            connect.Open();
+                        }
+
+                        SqlCommand cmd = new SqlCommand("UpdatePNKDetail", connect);
+                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                        cmd.Parameters.AddWithValue("@ParentId", phieuNhapKhoId);
+                        cmd.Parameters.AddWithValue("@ItemId", item.ItemId);
+                        cmd.Parameters.AddWithValue("@CarId", item.CarCode);
+                        cmd.Parameters.AddWithValue("@WarehouseId", item.WarehouseCode);
+                        cmd.Parameters.AddWithValue("@Quantity", item.Quantity);
+
+                        cmd.ExecuteNonQuery();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.Message,
+                                        "Lỗi",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        connect.Close();
+                    }
+                }
+
+            }
+
+            MessageBox.Show("Cập nhật thành công",
+                            "Thông báo",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
     }
 }

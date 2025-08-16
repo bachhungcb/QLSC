@@ -147,7 +147,7 @@ namespace KhanhLinh
         private void listEmployeeBtn_Click(object sender, EventArgs e)
         {
             EmployeeScreen empScreen = new EmployeeScreen();
-            this.Hide();
+             
             empScreen.Show();
 
         }
@@ -194,7 +194,7 @@ namespace KhanhLinh
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Cập nhật nhân viên thành công",
+                    MessageBox.Show("Cập nhật thành công",
                                     "Thông báo",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
@@ -218,7 +218,7 @@ namespace KhanhLinh
         private void danhSachsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeScreen empScreen = new EmployeeScreen();
-            this.Hide();
+             
             empScreen.Show();
         }
 

@@ -29,7 +29,7 @@ namespace KhanhLinh
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
-            this.Hide();
+             
         }
 
         private void register_showpwd_CheckedChanged(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace KhanhLinh
 
                                     LoginForm loginForm = new LoginForm();
                                     loginForm.Show();
-                                    this.Hide();
+                                     
 
                                 }
                             }

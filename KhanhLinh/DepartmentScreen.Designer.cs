@@ -222,6 +222,7 @@
             this.thêmToolStripMenuItem.Name = "thêmToolStripMenuItem";
             this.thêmToolStripMenuItem.Size = new System.Drawing.Size(80, 37);
             this.thêmToolStripMenuItem.Text = "Thêm";
+            this.thêmToolStripMenuItem.Click += new System.EventHandler(this.thêmToolStripMenuItem_Click);
             // 
             // panel2
             // 

@@ -97,7 +97,7 @@ namespace KhanhLinh
         private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairJobScreen repairJobScreen = new RepairJobScreen();
-            this.Hide();
+             
             repairJobScreen.Show();
         }
 
@@ -140,7 +140,7 @@ namespace KhanhLinh
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Cập nhật công việc sửa chữa thành công",
+                    MessageBox.Show("Cập nhật thành công",
                                     "Thông báo",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);

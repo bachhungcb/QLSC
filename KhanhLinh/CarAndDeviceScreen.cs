@@ -56,7 +56,7 @@ namespace KhanhLinh
         private void danhMụcKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WarehouseManagement warehouseManagement = new WarehouseManagement();
-            this.Hide();
+             
             warehouseManagement.Show();
         }
 
@@ -68,62 +68,62 @@ namespace KhanhLinh
         private void danhMụcVậtTưHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ItemScreen itemScreen = new ItemScreen();
-            this.Hide();
+             
             itemScreen.Show();
         }
 
         private void danhMụcNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeScreen employeeScreen = new EmployeeScreen();
-            this.Hide();
+             
             employeeScreen.Show();
         }
         private void danhMụcLoạiXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarTypeScreen carTypeScreen = new CarTypeScreen();
-            this.Hide();
+             
             carTypeScreen.Show();
         }
 
         private void danhMụcTuyếnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RouteScreen routeScreen = new RouteScreen();
-            this.Hide();
+             
             routeScreen.Show();
         }
 
         private void danhMụcBộPhậnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DepartmentScreen departmentScreen = new DepartmentScreen();
-            this.Hide();
+             
             departmentScreen.Show();
         }
 
         private void danhMụcCôngViệcSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairJobScreen repairJobScreen = new RepairJobScreen();
-            this.Hide();
+             
             repairJobScreen.Show();
         }
 
         private void địnhMứcVậtTưTiêuHaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConsumptionNormScreen consumptionNormScreen = new ConsumptionNormScreen();
-            this.Hide();
+             
             consumptionNormScreen.Show();
         }
 
         private void địnhMứcVậtTưSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairNormScreen repairNormScreen = new RepairNormScreen();
-            this.Hide();
+             
             repairNormScreen.Show();
         }
 
         private void phiếuTheoDõiHànhTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RouteTrackingScreen routeTrackingScreen = new RouteTrackingScreen();
-            this.Hide();
+             
             routeTrackingScreen.Show();
         }
 
@@ -140,7 +140,7 @@ namespace KhanhLinh
         private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddCarScreen addCarScreen = new AddCarScreen();
-            this.Hide();
+             
             addCarScreen.Show();
         }
 
@@ -208,6 +208,20 @@ namespace KhanhLinh
                 carId = carOverview.Rows[e.RowIndex].Cells["idDataGridViewTextBoxColumn"].Value?.ToString();
             }
             SharedId.Id = carId;
+        }
+
+        private void làmMớiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'finalDataSet1.vCar' table. You can move, or remove it, as needed.
+            this.vCarTableAdapter1.Fill(this.finalDataSet1.vCar);
+            // TODO: This line of code loads data into the 'finalDataSet1.vCarDetail' table. You can move, or remove it, as needed.
+            //this.vCarDetailTableAdapter.Fill(this.finalDataSet1.vCarDetail);
+            // TODO: This line of code loads data into the 'finalDataSet1.Car' table. You can move, or remove it, as needed.
+            this.carTableAdapter.Fill(this.finalDataSet1.Car);
+            // TODO: This line of code loads data into the 'khanhLinhDataSet1.vCar' table. You can move, or remove it, as needed.
+            this.vCarTableAdapter.Fill(this.khanhLinhDataSet1.vCar);
+            // TODO: This line of code loads data into the 'khanhLinhDataSet1.vCar' table. You can move, or remove it, as needed.
+            this.vCarTableAdapter.Fill(this.khanhLinhDataSet1.vCar);
         }
     }
 }

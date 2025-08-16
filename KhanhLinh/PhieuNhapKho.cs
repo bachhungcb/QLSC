@@ -47,7 +47,7 @@ namespace KhanhLinh
         private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddPhieuNhapKho addPhieuNhapKho = new AddPhieuNhapKho();
-            this.Hide();
+             
             addPhieuNhapKho.Show();
         }
 
@@ -97,7 +97,7 @@ namespace KhanhLinh
         private void phiếuXuấtKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhieuXuatKho phieuXuatKho = new PhieuXuatKho();
-            this.Hide();
+             
             phieuXuatKho.Show();
         }
 

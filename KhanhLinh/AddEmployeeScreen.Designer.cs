@@ -49,6 +49,8 @@
             this.danhSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cậpNhậtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.empIsRepairMan = new System.Windows.Forms.CheckBox();
             this.empJobSkillLevel = new System.Windows.Forms.TextBox();
@@ -72,8 +74,6 @@
             this.departmentTableAdapter = new KhanhLinh.KhanhLinhDataSet1TableAdapters.DepartmentTableAdapter();
             this.finalDataSet = new KhanhLinh.FinalDataSet();
             this.statusBarUC1 = new KhanhLinh.StatusBarUC();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.departmentBindingSource)).BeginInit();
@@ -266,6 +266,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1011, 543);
             this.panel2.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MistyRose;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button2.Location = new System.Drawing.Point(440, 480);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 42);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Hủy bỏ";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.button1.Location = new System.Drawing.Point(223, 480);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 42);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Lưu và thêm mới";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // addBtn
             // 
@@ -480,27 +502,6 @@
             this.statusBarUC1.Name = "statusBarUC1";
             this.statusBarUC1.Size = new System.Drawing.Size(1029, 41);
             this.statusBarUC1.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button1.Location = new System.Drawing.Point(223, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 42);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Lưu và thêm mới";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MistyRose;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button2.Location = new System.Drawing.Point(440, 480);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 42);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Hủy bỏ";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // AddEmployeeScreen
             // 

@@ -36,7 +36,7 @@ namespace KhanhLinh
         {
             RegisterForm registerForm = new RegisterForm();
             registerForm.Show();
-            this.Hide();
+             
         }
 
         private void login_checkpwd_CheckedChanged(object sender, EventArgs e)
@@ -106,8 +106,9 @@ namespace KhanhLinh
                         SessionInfo.Username = username;
 
                         MainScreen mainScreen = new MainScreen();
-                        mainScreen.Show();
                         this.Hide();
+                        mainScreen.Show();
+                         
                     }
                     else
                     {

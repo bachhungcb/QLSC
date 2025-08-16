@@ -38,7 +38,7 @@ namespace KhanhLinh
                     }
 
 
-                    MessageBox.Show("Thêm thể loại xe thành công",
+                    MessageBox.Show("Thêm mới thành công",
                                     "Thông báo",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);

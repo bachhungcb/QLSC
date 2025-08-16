@@ -59,6 +59,7 @@
             this.phiếuXuấtKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cậpNhậtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.làmMớiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vCarTableAdapter = new KhanhLinh.KhanhLinhDataSet1TableAdapters.vCarTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.carOverview = new MetroFramework.Controls.MetroGrid();
@@ -77,11 +78,16 @@
             this.routeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carTypeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expr1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expr2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expr3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.expr4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.vCarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.finalDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vCarBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
             this.label1 = new System.Windows.Forms.Label();
+            this.vCarBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.carDetail = new MetroFramework.Controls.MetroGrid();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -103,19 +109,22 @@
             this.vCarDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vCarDetailTableAdapter();
             this.vCarTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.vCarTableAdapter();
             this.statusBarUC1 = new KhanhLinh.StatusBarUC();
+            this.vCarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carOverview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCarDetailBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // vCarBindingSource
@@ -153,7 +162,8 @@
             this.địnhMứcToolStripMenuItem,
             this.phiếuToolStripMenuItem,
             this.thêmToolStripMenuItem,
-            this.cậpNhậtToolStripMenuItem});
+            this.cậpNhậtToolStripMenuItem,
+            this.làmMớiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -306,6 +316,13 @@
             this.cậpNhậtToolStripMenuItem.Text = "Cập nhật";
             this.cậpNhậtToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem_Click);
             // 
+            // làmMớiToolStripMenuItem
+            // 
+            this.làmMớiToolStripMenuItem.Name = "làmMớiToolStripMenuItem";
+            this.làmMớiToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.làmMớiToolStripMenuItem.Text = "Làm mới";
+            this.làmMớiToolStripMenuItem.Click += new System.EventHandler(this.làmMớiToolStripMenuItem_Click);
+            // 
             // vCarTableAdapter
             // 
             this.vCarTableAdapter.ClearBeforeFill = true;
@@ -360,8 +377,12 @@
             this.routeIdDataGridViewTextBoxColumn,
             this.carTypeIdDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
+            this.expr1DataGridViewTextBoxColumn,
+            this.expr2DataGridViewTextBoxColumn,
+            this.expr3DataGridViewTextBoxColumn,
+            this.expr4DataGridViewTextBoxColumn,
             this.isActiveDataGridViewCheckBoxColumn});
-            this.carOverview.DataSource = this.vCarBindingSource1;
+            this.carOverview.DataSource = this.vCarBindingSource2;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -445,7 +466,7 @@
             // firstUsedDateDataGridViewTextBoxColumn
             // 
             this.firstUsedDateDataGridViewTextBoxColumn.DataPropertyName = "FirstUsedDate";
-            this.firstUsedDateDataGridViewTextBoxColumn.HeaderText = "Ngày đầu sử dụng";
+            this.firstUsedDateDataGridViewTextBoxColumn.HeaderText = "Ngày bắt đầu sử dụng";
             this.firstUsedDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.firstUsedDateDataGridViewTextBoxColumn.Name = "firstUsedDateDataGridViewTextBoxColumn";
             this.firstUsedDateDataGridViewTextBoxColumn.ReadOnly = true;
@@ -535,6 +556,45 @@
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             this.statusDataGridViewTextBoxColumn.Width = 125;
             // 
+            // expr1DataGridViewTextBoxColumn
+            // 
+            this.expr1DataGridViewTextBoxColumn.DataPropertyName = "Expr1";
+            this.expr1DataGridViewTextBoxColumn.HeaderText = "Expr1";
+            this.expr1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.expr1DataGridViewTextBoxColumn.Name = "expr1DataGridViewTextBoxColumn";
+            this.expr1DataGridViewTextBoxColumn.ReadOnly = true;
+            this.expr1DataGridViewTextBoxColumn.Visible = false;
+            this.expr1DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // expr2DataGridViewTextBoxColumn
+            // 
+            this.expr2DataGridViewTextBoxColumn.DataPropertyName = "Expr2";
+            this.expr2DataGridViewTextBoxColumn.HeaderText = "Expr2";
+            this.expr2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.expr2DataGridViewTextBoxColumn.Name = "expr2DataGridViewTextBoxColumn";
+            this.expr2DataGridViewTextBoxColumn.ReadOnly = true;
+            this.expr2DataGridViewTextBoxColumn.Visible = false;
+            this.expr2DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // expr3DataGridViewTextBoxColumn
+            // 
+            this.expr3DataGridViewTextBoxColumn.DataPropertyName = "Expr3";
+            this.expr3DataGridViewTextBoxColumn.HeaderText = "Expr3";
+            this.expr3DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.expr3DataGridViewTextBoxColumn.Name = "expr3DataGridViewTextBoxColumn";
+            this.expr3DataGridViewTextBoxColumn.ReadOnly = true;
+            this.expr3DataGridViewTextBoxColumn.Visible = false;
+            this.expr3DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // expr4DataGridViewTextBoxColumn
+            // 
+            this.expr4DataGridViewTextBoxColumn.DataPropertyName = "Expr4";
+            this.expr4DataGridViewTextBoxColumn.HeaderText = "Bộ phận";
+            this.expr4DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.expr4DataGridViewTextBoxColumn.Name = "expr4DataGridViewTextBoxColumn";
+            this.expr4DataGridViewTextBoxColumn.ReadOnly = true;
+            this.expr4DataGridViewTextBoxColumn.Width = 125;
+            // 
             // isActiveDataGridViewCheckBoxColumn
             // 
             this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
@@ -544,15 +604,10 @@
             this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
             this.isActiveDataGridViewCheckBoxColumn.Width = 125;
             // 
-            // vCarBindingSource1
+            // vCarBindingSource2
             // 
-            this.vCarBindingSource1.DataMember = "vCar";
-            this.vCarBindingSource1.DataSource = this.finalDataSet1BindingSource;
-            // 
-            // finalDataSet1BindingSource
-            // 
-            this.finalDataSet1BindingSource.DataSource = this.finalDataSet1;
-            this.finalDataSet1BindingSource.Position = 0;
+            this.vCarBindingSource2.DataMember = "vCar";
+            this.vCarBindingSource2.DataSource = this.finalDataSet1;
             // 
             // finalDataSet1
             // 
@@ -569,6 +624,16 @@
             this.label1.Size = new System.Drawing.Size(124, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tổng quan";
+            // 
+            // vCarBindingSource1
+            // 
+            this.vCarBindingSource1.DataMember = "vCar";
+            this.vCarBindingSource1.DataSource = this.finalDataSet1BindingSource;
+            // 
+            // finalDataSet1BindingSource
+            // 
+            this.finalDataSet1BindingSource.DataSource = this.finalDataSet1;
+            this.finalDataSet1BindingSource.Position = 0;
             // 
             // panel1
             // 
@@ -804,6 +869,11 @@
             this.statusBarUC1.Size = new System.Drawing.Size(1407, 41);
             this.statusBarUC1.TabIndex = 9;
             // 
+            // vCarBindingSource3
+            // 
+            this.vCarBindingSource3.DataMember = "vCar";
+            this.vCarBindingSource3.DataSource = this.finalDataSet1;
+            // 
             // CarAndDeviceScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -829,14 +899,16 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carOverview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vCarDetailBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -883,6 +955,22 @@
         private System.Windows.Forms.BindingSource vCarBindingSource1;
         private FinalDataSet1TableAdapters.vCarTableAdapter vCarTableAdapter1;
         private StatusBarUC statusBarUC1;
+        private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn carIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn replacementDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn replacementKmDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn isItemWithSerialDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.ToolStripMenuItem làmMớiToolStripMenuItem;
+        private System.Windows.Forms.BindingSource vCarBindingSource2;
+        private System.Windows.Forms.BindingSource vCarBindingSource3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
@@ -898,19 +986,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn routeIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn carTypeIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn expr4DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.ToolStripMenuItem cậpNhậtToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn carIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn serialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn replacementDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn replacementKmDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemCodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn itemNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn isItemWithSerialDataGridViewCheckBoxColumn;
     }
 }

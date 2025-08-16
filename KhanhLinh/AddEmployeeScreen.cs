@@ -25,13 +25,14 @@ namespace KhanhLinh
         {
             // TODO: This line of code loads data into the 'khanhLinhDataSet1.Department' table. You can move, or remove it, as needed.
             this.departmentTableAdapter.Fill(this.khanhLinhDataSet1.Department);
+            departmentBox.SelectedItem = null;
 
         }
 
         private void listEmployeeBtn_Click(object sender, EventArgs e)
         {
             EmployeeScreen employeeScreen = new EmployeeScreen();
-            this.Hide();
+             
             employeeScreen.Show();
         }
 
@@ -39,7 +40,7 @@ namespace KhanhLinh
         {
             string Code = empCode.Text.Trim();
             string Name = empName.Text.Trim();
-            string DeptId = departmentBox.SelectedValue.ToString();
+            string DeptId = departmentBox.SelectedValue?.ToString() ?? "";
             string PhoneNumber = empPhoneNumber.Text.Trim();
             DateTime BirthDate = empDOB.Value;
             string Gender = empGender.Text.Trim();
@@ -62,7 +63,13 @@ namespace KhanhLinh
 
                     cmd.Parameters.AddWithValue("@Code", Code);
                     cmd.Parameters.AddWithValue("@Name", Name);
-                    cmd.Parameters.AddWithValue("@DepartmentId", DeptId);
+                    cmd.Parameters.AddWithValue(
+                        "@DepartmentId",
+                        string.IsNullOrWhiteSpace(departmentBox.SelectedValue?.ToString())
+                            ? (object)DBNull.Value
+                            : (object)Guid.Parse(departmentBox.SelectedValue.ToString())
+                    );
+
                     cmd.Parameters.AddWithValue("@PhoneNumber", PhoneNumber);
                     cmd.Parameters.AddWithValue("@BirthDate", BirthDate);
                     cmd.Parameters.AddWithValue("@Gender", Gender);
@@ -72,7 +79,7 @@ namespace KhanhLinh
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Thêm nhân viên thành công",
+                    MessageBox.Show("Thêm mới thành công",
                                     "Thông báo",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
@@ -106,69 +113,69 @@ namespace KhanhLinh
         {
             CarAndDeviceScreen carAndDeviceScreen = new CarAndDeviceScreen();
             carAndDeviceScreen.Show();
-            this.Hide();
+             
         }
 
         private void danhMụcKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WarehouseManagement warehouseManagement = new WarehouseManagement();
-            this.Hide();
+             
             warehouseManagement.Show();
         }
 
         private void danhMụcTuyếnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RouteScreen routeScreen = new RouteScreen();
-            this.Hide();
+             
             routeScreen.Show();
         }
 
         private void danhMụcBộPhậnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DepartmentScreen departmentScreen = new DepartmentScreen();
-            this.Hide();
+             
             departmentScreen.Show();
         }
 
         private void danhMụcLoạiXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarTypeScreen carTypeScreen = new CarTypeScreen();
-            this.Hide();
+             
             carTypeScreen.Show();
         }
 
         private void danhMụcCôngViệcSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairJobScreen repairJobScreen = new RepairJobScreen();
-            this.Hide();
+             
             repairJobScreen.Show();
         }
 
         private void danhMụcVậtTưHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ItemScreen itemScreen = new ItemScreen();
-            this.Hide();
+             
             itemScreen.Show();
         }
 
         private void địnhMứcVậtTưTiêuHaoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConsumptionNormScreen consumptionNormScreen = new ConsumptionNormScreen();
-            this.Hide();
+             
             consumptionNormScreen.Show();
         }
 
         private void địnhMứcVậtTưSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RepairNormScreen repairNormScreen = new RepairNormScreen();
-            this.Hide();
+             
             repairNormScreen.Show();
         }
 
         private void phiếuTheoDõiHànhTrìnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RouteTrackingScreen routeTrackingScreen = new RouteTrackingScreen();
-            this.Hide();
+             
             routeTrackingScreen.Show();
         }
 
@@ -185,14 +192,14 @@ namespace KhanhLinh
         private void updateEmpBtn_Click(object sender, EventArgs e)
         {
             UpdateEmployeeScreen updateEmployeeScreen = new UpdateEmployeeScreen();
-            this.Hide();
+             
             updateEmployeeScreen.Show();
         }
 
         private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeScreen employeeScreen = new EmployeeScreen();
-            this.Hide();
+             
             employeeScreen.Show();
         }
 
@@ -201,6 +208,11 @@ private void cậpNhậtToolStripMenuItem_Click(object sender, EventArgs e)
             UpdateEmployeeScreen updateEmployeeScreen = new UpdateEmployeeScreen();
 
             updateEmployeeScreen.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

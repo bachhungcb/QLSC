@@ -323,6 +323,7 @@
             this.departmentBox.Size = new System.Drawing.Size(366, 33);
             this.departmentBox.TabIndex = 6;
             this.departmentBox.ValueMember = "Id";
+            this.departmentBox.SelectedIndexChanged += new System.EventHandler(this.departmentBox_SelectedIndexChanged);
             // 
             // departmentBindingSource
             // 

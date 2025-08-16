@@ -217,7 +217,7 @@ namespace KhanhLinh
 
             }
 
-            MessageBox.Show("Thêm Phiếu nhập kho thành công",
+            MessageBox.Show("Thêm mới thành công",
                             "Thông báo",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
@@ -226,7 +226,7 @@ namespace KhanhLinh
         private void phiếuNhậpKhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhieuNhapKho phieuNhapKhoSreen = new PhieuNhapKho();
-            this.Hide();
+             
             phieuNhapKhoSreen.Show();
         }
 

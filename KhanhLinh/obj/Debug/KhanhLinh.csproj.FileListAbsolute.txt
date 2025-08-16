@@ -139,3 +139,4 @@ F:\Solution\Solution\KhanhLinh\obj\Debug\KhanhLinh.csproj.AssemblyReference.cach
 F:\Solution\Solution\KhanhLinh\obj\Debug\KhanhLinh.exe.config
 F:\Solution\Solution\KhanhLinh\obj\Debug\KhanhLinh.exe
 F:\Solution\Solution\KhanhLinh\obj\Debug\KhanhLinh.pdb
+F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.UpdatePhieuNhapKho.resources

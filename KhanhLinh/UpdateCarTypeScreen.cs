@@ -113,7 +113,7 @@ namespace KhanhLinh
 
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Cập nhật thể loại xe thành công",
+                    MessageBox.Show("Cập nhật thành công",
                                     "Thông báo",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Information);
@@ -141,7 +141,7 @@ namespace KhanhLinh
         private void danhSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarTypeScreen carTypeScreen = new CarTypeScreen();
-            this.Hide();
+             
             carTypeScreen.Show();
         }
 
