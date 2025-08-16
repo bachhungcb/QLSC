@@ -129,5 +129,11 @@ namespace KhanhLinh
             loginForm.Show();
              
         }
+
+        private void lệnhSửaChữaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LenhSuaChua lenhSuaChua = new LenhSuaChua();
+            lenhSuaChua.Show();
+        }
     }
 }

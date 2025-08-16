@@ -231,6 +231,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KhanhLinhDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LenhSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LenhSuaChua.Designer.cs">
+      <DependentUpon>LenhSuaChua.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,12 @@
     </Compile>
     <Compile Include="MenuStripUC.Designer.cs">
       <DependentUpon>MenuStripUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoiDungBaoDuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NoiDungBaoDuong.Designer.cs">
+      <DependentUpon>NoiDungBaoDuong.cs</DependentUpon>
     </Compile>
     <Compile Include="PhieuNhapKho.cs">
       <SubType>Form</SubType>
@@ -290,6 +302,12 @@
     </Compile>
     <Compile Include="StatusBarUC.Designer.cs">
       <DependentUpon>StatusBarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinVatTu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongTinVatTu.Designer.cs">
+      <DependentUpon>ThongTinVatTu.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateCarScreen.cs">
       <SubType>Form</SubType>
@@ -410,6 +428,9 @@
     <EmbeddedResource Include="ItemScreen.resx">
       <DependentUpon>ItemScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LenhSuaChua.resx">
+      <DependentUpon>LenhSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuStripUC.resx">
       <DependentUpon>MenuStripUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoiDungBaoDuong.resx">
+      <DependentUpon>NoiDungBaoDuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuNhapKho.resx">
       <DependentUpon>PhieuNhapKho.cs</DependentUpon>
@@ -439,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatusBarUC.resx">
       <DependentUpon>StatusBarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinVatTu.resx">
+      <DependentUpon>ThongTinVatTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateCarScreen.resx">
       <DependentUpon>UpdateCarScreen.cs</DependentUpon>

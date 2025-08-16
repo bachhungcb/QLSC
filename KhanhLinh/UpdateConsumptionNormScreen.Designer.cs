@@ -49,17 +49,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.conNormCreatedBy = new System.Windows.Forms.ComboBox();
+            this.employeeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
             this.conNormFinishDate = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.conNormStartDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.conNormItemType = new System.Windows.Forms.ComboBox();
+            this.itemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.addBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.conNormDescription = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.conNormCarTypeId = new System.Windows.Forms.ComboBox();
+            this.carTypeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.phiếuXuấtKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.roleStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
@@ -77,12 +81,8 @@
             this.phiếuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phiếuTheoDõiHànhTrìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phiếuNhậpKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
-            this.carTypeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.carTypeTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.CarTypeTableAdapter();
-            this.employeeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.EmployeeTableAdapter();
-            this.itemBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.itemTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.ItemTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finalDataSetBindingSource)).BeginInit();
@@ -90,11 +90,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusBarUC1
@@ -148,6 +148,7 @@
             this.conNormItemQuantity.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormItemQuantity.Location = new System.Drawing.Point(657, 535);
             this.conNormItemQuantity.Name = "conNormItemQuantity";
+            this.conNormItemQuantity.ReadOnly = true;
             this.conNormItemQuantity.Size = new System.Drawing.Size(294, 38);
             this.conNormItemQuantity.TabIndex = 49;
             // 
@@ -184,6 +185,7 @@
             this.conNormItemUnit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conNormItemUnit.Location = new System.Drawing.Point(353, 535);
             this.conNormItemUnit.Name = "conNormItemUnit";
+            this.conNormItemUnit.ReadOnly = true;
             this.conNormItemUnit.Size = new System.Drawing.Size(298, 38);
             this.conNormItemUnit.TabIndex = 45;
             // 
@@ -269,6 +271,16 @@
             this.conNormCreatedBy.TabIndex = 40;
             this.conNormCreatedBy.ValueMember = "Id";
             // 
+            // employeeBindingSource1
+            // 
+            this.employeeBindingSource1.DataMember = "Employee";
+            this.employeeBindingSource1.DataSource = this.finalDataSet1;
+            // 
+            // finalDataSet1
+            // 
+            this.finalDataSet1.DataSetName = "FinalDataSet1";
+            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // conNormFinishDate
             // 
             this.conNormFinishDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -327,6 +339,11 @@
             this.conNormItemType.TabIndex = 35;
             this.conNormItemType.ValueMember = "Id";
             this.conNormItemType.SelectionChangeCommitted += new System.EventHandler(this.conNormItemType_SelectionChangeCommitted);
+            // 
+            // itemBindingSource1
+            // 
+            this.itemBindingSource1.DataMember = "Item";
+            this.itemBindingSource1.DataSource = this.finalDataSet1;
             // 
             // label7
             // 
@@ -388,6 +405,11 @@
             this.conNormCarTypeId.Size = new System.Drawing.Size(930, 39);
             this.conNormCarTypeId.TabIndex = 0;
             this.conNormCarTypeId.ValueMember = "Id";
+            // 
+            // carTypeBindingSource1
+            // 
+            this.carTypeBindingSource1.DataMember = "CarType";
+            this.carTypeBindingSource1.DataSource = this.finalDataSet1;
             // 
             // phiếuXuấtKhoToolStripMenuItem
             // 
@@ -534,33 +556,13 @@
             this.phiếuNhậpKhoToolStripMenuItem.Text = "Phiếu nhập kho";
             this.phiếuNhậpKhoToolStripMenuItem.Click += new System.EventHandler(this.phiếuNhậpKhoToolStripMenuItem_Click);
             // 
-            // finalDataSet1
-            // 
-            this.finalDataSet1.DataSetName = "FinalDataSet1";
-            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // carTypeBindingSource1
-            // 
-            this.carTypeBindingSource1.DataMember = "CarType";
-            this.carTypeBindingSource1.DataSource = this.finalDataSet1;
-            // 
             // carTypeTableAdapter1
             // 
             this.carTypeTableAdapter1.ClearBeforeFill = true;
             // 
-            // employeeBindingSource1
-            // 
-            this.employeeBindingSource1.DataMember = "Employee";
-            this.employeeBindingSource1.DataSource = this.finalDataSet1;
-            // 
             // employeeTableAdapter1
             // 
             this.employeeTableAdapter1.ClearBeforeFill = true;
-            // 
-            // itemBindingSource1
-            // 
-            this.itemBindingSource1.DataMember = "Item";
-            this.itemBindingSource1.DataSource = this.finalDataSet1;
             // 
             // itemTableAdapter1
             // 
@@ -585,12 +587,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
