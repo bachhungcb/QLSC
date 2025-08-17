@@ -72,5 +72,21 @@ namespace KhanhLinh
         {
 
         }
+
+        private void thongTinVatTu1_Load(object sender, EventArgs e)
+        {
+            noiDungBaoDuong.Hide();
+            thongTinVatTu.Show();
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
