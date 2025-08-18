@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.repairJobBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.finalDataSet1 = new KhanhLinh.FinalDataSet1();
+            this.repairJobTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.RepairJobTableAdapter();
             this.MaCongViec = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoiDungCongViec = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CongViec = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ThoiGianDuKien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoSua1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ThoSua2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ThoSua3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ThoSua1 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repairJobBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 58);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(45, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(37, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "label";
             // 
@@ -66,13 +69,11 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCongViec,
-            this.NoiDungCongViec,
+            this.CongViec,
             this.ThoiGianDuKien,
-            this.ThoSua1,
-            this.ThoSua2,
-            this.ThoSua3});
+            this.ThoSua1});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
@@ -85,56 +86,72 @@
             this.dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(1137, 576);
+            this.dataGridView1.Size = new System.Drawing.Size(1516, 709);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // repairJobBindingSource
+            // 
+            this.repairJobBindingSource.DataMember = "RepairJob";
+            this.repairJobBindingSource.DataSource = this.finalDataSet1;
+            // 
+            // finalDataSet1
+            // 
+            this.finalDataSet1.DataSetName = "FinalDataSet1";
+            this.finalDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // repairJobTableAdapter
+            // 
+            this.repairJobTableAdapter.ClearBeforeFill = true;
             // 
             // MaCongViec
             // 
             this.MaCongViec.HeaderText = "Mã công việc";
+            this.MaCongViec.MinimumWidth = 6;
             this.MaCongViec.Name = "MaCongViec";
+            this.MaCongViec.Visible = false;
             this.MaCongViec.Width = 200;
             // 
-            // NoiDungCongViec
+            // CongViec
             // 
-            this.NoiDungCongViec.HeaderText = "Nội dung công việc ";
-            this.NoiDungCongViec.Name = "NoiDungCongViec";
-            this.NoiDungCongViec.Width = 200;
+            this.CongViec.DataSource = this.repairJobBindingSource;
+            this.CongViec.DisplayMember = "Name";
+            this.CongViec.HeaderText = "Công việc ";
+            this.CongViec.MinimumWidth = 6;
+            this.CongViec.Name = "CongViec";
+            this.CongViec.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.CongViec.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.CongViec.ValueMember = "Id";
+            this.CongViec.Width = 200;
             // 
             // ThoiGianDuKien
             // 
             this.ThoiGianDuKien.HeaderText = "Thời gian dự kiến (giờ)";
+            this.ThoiGianDuKien.MinimumWidth = 6;
             this.ThoiGianDuKien.Name = "ThoiGianDuKien";
+            this.ThoiGianDuKien.Width = 125;
             // 
             // ThoSua1
             // 
-            this.ThoSua1.HeaderText = "Thợ sửa 1";
+            this.ThoSua1.HeaderText = "Chọn thợ sửa";
+            this.ThoSua1.MinimumWidth = 6;
             this.ThoSua1.Name = "ThoSua1";
-            this.ThoSua1.Width = 150;
-            // 
-            // ThoSua2
-            // 
-            this.ThoSua2.HeaderText = "Thợ sửa 2";
-            this.ThoSua2.Name = "ThoSua2";
-            this.ThoSua2.Width = 150;
-            // 
-            // ThoSua3
-            // 
-            this.ThoSua3.HeaderText = "Thợ sửa 3 ";
-            this.ThoSua3.Name = "ThoSua3";
-            this.ThoSua3.Width = 150;
+            this.ThoSua1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ThoSua1.Width = 700;
             // 
             // NoiDungBaoDuong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NoiDungBaoDuong";
-            this.Size = new System.Drawing.Size(1139, 576);
+            this.Size = new System.Drawing.Size(1519, 709);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repairJobBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finalDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,11 +161,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource repairJobBindingSource;
+        private FinalDataSet1 finalDataSet1;
+        private FinalDataSet1TableAdapters.RepairJobTableAdapter repairJobTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCongViec;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDungCongViec;
+        private System.Windows.Forms.DataGridViewComboBoxColumn CongViec;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianDuKien;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ThoSua1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ThoSua2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ThoSua3;
+        private System.Windows.Forms.DataGridViewButtonColumn ThoSua1;
     }
 }

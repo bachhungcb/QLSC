@@ -206,6 +206,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FinalDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmSelectEmployees .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectEmployees .Designer.cs">
+      <DependentUpon>frmSelectEmployees .cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryVoucherScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeScreen.resx">
       <DependentUpon>EmployeeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectEmployees .resx">
+      <DependentUpon>frmSelectEmployees .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryVoucherScreen.resx">
       <DependentUpon>InventoryVoucherScreen.cs</DependentUpon>
