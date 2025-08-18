@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "F:\\KhanhLinh\\",
   "Documents": [
     {
@@ -25,6 +26,37 @@
     {
       "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|F:\\KhanhLinh\\khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\QLSC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\lenhsuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\lenhsuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|c:\\users\\admin\\source\\repos\\qlsc\\khanhlinh\\lenhsuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\lenhsuachua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\noidungbaoduong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\noidungbaoduong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\thongtinvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\noidungbaoduong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\noidungbaoduong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|C:\\Users\\admin\\source\\repos\\QLSC\\khanhlinh\\noidungbaoduong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DB1029B-D67F-48CA-8920-D92EF8594955}|KhanhLinh\\KhanhLinh.csproj|solutionrelative:khanhlinh\\noidungbaoduong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 465,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
+=======
+          "SelectedChildIndex": 5,
+>>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,7 +93,12 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "LenhSuaChua.Designer.cs",
               "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\LenhSuaChua.Designer.cs",
@@ -103,17 +144,94 @@
               "ToolTip": "D:\\QLSC\\KhanhLinh\\NoiDungBaoDuong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T16:23:16.313Z"
+=======
+              "DocumentIndex": 2,
+              "Title": "NoiDungBaoDuong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\NoiDungBaoDuong.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.cs [Design]",
+              "RelativeToolTip": "KhanhLinh\\NoiDungBaoDuong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:23:16.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LenhSuaChua.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\LenhSuaChua.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\LenhSuaChua.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\LenhSuaChua.cs [Design]",
+              "RelativeToolTip": "KhanhLinh\\LenhSuaChua.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:23:24.615Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LenhSuaChua.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\LenhSuaChua.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\LenhSuaChua.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\LenhSuaChua.cs",
+              "RelativeToolTip": "KhanhLinh\\LenhSuaChua.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv1IAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:24:06.575Z",
+              "EditorCaption": ""
+>>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ThongTinVatTu.cs [Design]",
+<<<<<<< HEAD
               "DocumentMoniker": "F:\\KhanhLinh\\KhanhLinh\\ThongTinVatTu.cs",
               "RelativeDocumentMoniker": "KhanhLinh\\ThongTinVatTu.cs",
               "ToolTip": "F:\\KhanhLinh\\KhanhLinh\\ThongTinVatTu.cs [Design]",
+=======
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\ThongTinVatTu.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\ThongTinVatTu.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\ThongTinVatTu.cs [Design]",
+>>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
               "RelativeToolTip": "KhanhLinh\\ThongTinVatTu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T16:23:03.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThongTinVatTu.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\ThongTinVatTu.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\ThongTinVatTu.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\ThongTinVatTu.cs",
+              "RelativeToolTip": "KhanhLinh\\ThongTinVatTu.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T10:22:34.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoiDungBaoDuong.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\NoiDungBaoDuong.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.cs",
+              "RelativeToolTip": "KhanhLinh\\NoiDungBaoDuong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T10:18:08.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoiDungBaoDuong.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.Designer.cs",
+              "RelativeDocumentMoniker": "KhanhLinh\\NoiDungBaoDuong.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\QLSC\\KhanhLinh\\NoiDungBaoDuong.Designer.cs",
+              "RelativeToolTip": "KhanhLinh\\NoiDungBaoDuong.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T10:18:16.091Z"
             }
           ]
         },
