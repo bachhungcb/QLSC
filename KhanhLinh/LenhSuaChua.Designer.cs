@@ -65,7 +65,7 @@
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-<<<<<<< HEAD
+
             // thongTinVatTu1
             // 
             this.thongTinVatTu1.Location = new System.Drawing.Point(668, 224);
@@ -103,8 +103,7 @@
             this.menuStripUC1.Size = new System.Drawing.Size(1583, 41);
             this.menuStripUC1.TabIndex = 0;
             // 
-=======
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             // label1
             // 
             this.label1.AutoSize = true;
@@ -189,11 +188,9 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(180, 48);
-<<<<<<< HEAD
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 13;
@@ -202,11 +199,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(180, 69);
-<<<<<<< HEAD
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(683, 24);
             this.comboBox1.TabIndex = 14;
@@ -215,11 +210,9 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(180, 90);
-<<<<<<< HEAD
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(683, 24);
             this.comboBox2.TabIndex = 15;
@@ -228,11 +221,9 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(180, 132);
-<<<<<<< HEAD
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(683, 24);
             this.comboBox3.TabIndex = 16;
@@ -241,11 +232,9 @@
             // 
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(180, 153);
-<<<<<<< HEAD
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(683, 24);
             this.comboBox4.TabIndex = 17;
@@ -254,11 +243,9 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(180, 111);
-<<<<<<< HEAD
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(683, 22);
             this.textBox1.TabIndex = 18;
@@ -267,11 +254,9 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(180, 175);
-<<<<<<< HEAD
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(683, 22);
             this.textBox2.TabIndex = 19;
@@ -358,11 +343,9 @@
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(1091, 69);
-<<<<<<< HEAD
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(435, 24);
             this.comboBox5.TabIndex = 27;
@@ -371,11 +354,9 @@
             // 
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(1091, 113);
-<<<<<<< HEAD
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(435, 24);
             this.comboBox6.TabIndex = 28;
@@ -384,11 +365,9 @@
             // 
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Location = new System.Drawing.Point(1091, 153);
-<<<<<<< HEAD
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox7.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(435, 24);
             this.comboBox7.TabIndex = 29;
@@ -396,11 +375,9 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(1091, 175);
-<<<<<<< HEAD
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(435, 22);
             this.dateTimePicker2.TabIndex = 30;
@@ -408,11 +385,9 @@
             // dateTimePicker3
             // 
             this.dateTimePicker3.Location = new System.Drawing.Point(1091, 198);
-<<<<<<< HEAD
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(435, 22);
             this.dateTimePicker3.TabIndex = 31;
@@ -421,11 +396,9 @@
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Location = new System.Drawing.Point(1091, 91);
-<<<<<<< HEAD
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(435, 22);
             this.textBox3.TabIndex = 32;
@@ -434,11 +407,9 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Location = new System.Drawing.Point(1091, 133);
-<<<<<<< HEAD
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(435, 22);
             this.textBox4.TabIndex = 33;
@@ -449,11 +420,9 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(21, 229);
-<<<<<<< HEAD
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1525, 598);
@@ -462,33 +431,25 @@
             // tabPage1
             // 
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
-<<<<<<< HEAD
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
+
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.tabPage1.Size = new System.Drawing.Size(1517, 569);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin nội dung bảo dưỡng, sửa chữa";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
-<<<<<<< HEAD
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.tabPage2.Size = new System.Drawing.Size(1517, 569);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Thông tin vật tư thay thế, bảo dưỡng";
@@ -499,11 +460,9 @@
             // 
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(1365, 44);
-<<<<<<< HEAD
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.comboBox8.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(160, 24);
             this.comboBox8.TabIndex = 35;
@@ -511,11 +470,9 @@
             // SaveBtn
             // 
             this.SaveBtn.Location = new System.Drawing.Point(21, 834);
-<<<<<<< HEAD
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(100, 28);
             this.SaveBtn.TabIndex = 36;
@@ -527,11 +484,9 @@
             // CancelBtn
             // 
             this.CancelBtn.Location = new System.Drawing.Point(129, 834);
-<<<<<<< HEAD
-            this.CancelBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
+
             this.CancelBtn.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(100, 28);
             this.CancelBtn.TabIndex = 37;
@@ -577,11 +532,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-<<<<<<< HEAD
+
             this.Controls.Add(this.statusBarUC1);
             this.Controls.Add(this.menuStripUC1);
-=======
->>>>>>> 9fc36b31125f0e0caeaa7acdf6557a2a042d31a8
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LenhSuaChua";
             this.Text = "LenhSuaChua";
