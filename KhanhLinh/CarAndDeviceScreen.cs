@@ -223,5 +223,15 @@ namespace KhanhLinh
             // TODO: This line of code loads data into the 'khanhLinhDataSet1.vCar' table. You can move, or remove it, as needed.
             this.vCarTableAdapter.Fill(this.khanhLinhDataSet1.vCar);
         }
+
+        private void carOverview_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var carId = "";
+            if (e.RowIndex >= 0)
+            {
+                carId = carOverview.Rows[e.RowIndex].Cells["idDataGridViewTextBoxColumn"].Value?.ToString();
+            }
+            SharedId.Id = carId;
+        }
     }
 }

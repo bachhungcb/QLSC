@@ -142,5 +142,15 @@ namespace KhanhLinh
             }
             SharedId.Id = carTypeId;
         }
+
+        private void metroGrid1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var carTypeId = "";
+            if (e.RowIndex >= 0)
+            {
+                carTypeId = metroGrid1.Rows[e.RowIndex].Cells["idDataGridViewTextBoxColumn"].Value?.ToString();
+            }
+            SharedId.Id = carTypeId;
+        }
     }
 }

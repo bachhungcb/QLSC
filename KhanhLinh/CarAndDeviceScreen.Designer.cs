@@ -415,6 +415,7 @@
             this.carOverview.Size = new System.Drawing.Size(1383, 309);
             this.carOverview.TabIndex = 1;
             this.carOverview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.carOverview_CellContentClick);
+            this.carOverview.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.carOverview_CellContentDoubleClick);
             this.carOverview.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellDoubleClick);
             // 
             // idDataGridViewTextBoxColumn

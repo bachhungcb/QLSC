@@ -303,6 +303,7 @@
             this.metroGrid1.Size = new System.Drawing.Size(1008, 551);
             this.metroGrid1.TabIndex = 0;
             this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
+            this.metroGrid1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
