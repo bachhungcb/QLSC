@@ -95,7 +95,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.itemTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.ItemTableAdapter();
             this.departmentTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.DepartmentTableAdapter();
-            this.statusBarUC2 = new KhanhLinh.StatusBarUC();
             this.carTypeTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTypeTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carTypeBindingSource)).BeginInit();
@@ -788,16 +787,6 @@
             // 
             this.departmentTableAdapter.ClearBeforeFill = true;
             // 
-            // statusBarUC2
-            // 
-            this.statusBarUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC2.Location = new System.Drawing.Point(0, 697);
-            this.statusBarUC2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.statusBarUC2.Name = "statusBarUC2";
-            this.statusBarUC2.Size = new System.Drawing.Size(1407, 41);
-            this.statusBarUC2.TabIndex = 7;
-            // 
             // carTypeTableAdapter
             // 
             this.carTypeTableAdapter.ClearBeforeFill = true;
@@ -808,7 +797,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1407, 738);
-            this.Controls.Add(this.statusBarUC2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);

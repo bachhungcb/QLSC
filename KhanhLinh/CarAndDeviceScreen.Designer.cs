@@ -108,7 +108,6 @@
             this.carTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.CarTableAdapter();
             this.vCarDetailTableAdapter = new KhanhLinh.FinalDataSet1TableAdapters.vCarDetailTableAdapter();
             this.vCarTableAdapter1 = new KhanhLinh.FinalDataSet1TableAdapters.vCarTableAdapter();
-            this.statusBarUC1 = new KhanhLinh.StatusBarUC();
             this.vCarBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vCarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khanhLinhDataSet1BindingSource)).BeginInit();
@@ -859,16 +858,6 @@
             // 
             this.vCarTableAdapter1.ClearBeforeFill = true;
             // 
-            // statusBarUC1
-            // 
-            this.statusBarUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(242)))), ((int)(((byte)(249)))));
-            this.statusBarUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.statusBarUC1.Location = new System.Drawing.Point(0, 697);
-            this.statusBarUC1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.statusBarUC1.Name = "statusBarUC1";
-            this.statusBarUC1.Size = new System.Drawing.Size(1407, 41);
-            this.statusBarUC1.TabIndex = 9;
-            // 
             // vCarBindingSource3
             // 
             this.vCarBindingSource3.DataMember = "vCar";
@@ -880,7 +869,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(214)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(1407, 738);
-            this.Controls.Add(this.statusBarUC1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.menuStrip1);
