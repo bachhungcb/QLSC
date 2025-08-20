@@ -143,6 +143,7 @@ D:\QLSC\KhanhLinh\obj\Debug\KhanhLinh.csproj.Up2Date
 D:\QLSC\KhanhLinh\obj\Debug\KhanhLinh.exe
 D:\QLSC\KhanhLinh\obj\Debug\KhanhLinh.pdb
 D:\QLSC\KhanhLinh\bin\Debug\KhanhLinh.pdb
+<<<<<<< HEAD
 C:\Users\admin\source\repos\QLSC\KhanhLinh\bin\Debug\KhanhLinh.exe.config
 C:\Users\admin\source\repos\QLSC\KhanhLinh\bin\Debug\KhanhLinh.exe
 C:\Users\admin\source\repos\QLSC\KhanhLinh\bin\Debug\KhanhLinh.pdb
@@ -287,3 +288,5 @@ F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.exe
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.pdb
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.exe.config
 F:\KhanhLinh\KhanhLinh\obj\Debug\KhanhLinh.frmSelectEmployees.resources
+=======
+>>>>>>> b87cb9255427e896e39bdfa5b10aba811425c45c

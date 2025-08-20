@@ -156,6 +156,12 @@
     <Compile Include="AddRouteTrackingScreen.Designer.cs">
       <DependentUpon>AddRouteTrackingScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarAndDeviceScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddRouteTrackingScreen.resx">
       <DependentUpon>AddRouteTrackingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CarAndDeviceScreen.resx">
       <DependentUpon>CarAndDeviceScreen.cs</DependentUpon>
